@@ -1,0 +1,14 @@
+C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\PracticeLinq\bin\Debug\net8.0\PracticeLinq.exe
+C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\PracticeLinq\bin\Debug\net8.0\PracticeLinq.deps.json
+C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\PracticeLinq\bin\Debug\net8.0\PracticeLinq.runtimeconfig.json
+C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\PracticeLinq\bin\Debug\net8.0\PracticeLinq.dll
+C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\PracticeLinq\bin\Debug\net8.0\PracticeLinq.pdb
+C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\PracticeLinq\obj\Debug\net8.0\PracticeLinq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\PracticeLinq\obj\Debug\net8.0\PracticeLinq.AssemblyInfoInputs.cache
+C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\PracticeLinq\obj\Debug\net8.0\PracticeLinq.AssemblyInfo.cs
+C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\PracticeLinq\obj\Debug\net8.0\PracticeLinq.csproj.CoreCompileInputs.cache
+C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\PracticeLinq\obj\Debug\net8.0\PracticeLinq.dll
+C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\PracticeLinq\obj\Debug\net8.0\refint\PracticeLinq.dll
+C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\PracticeLinq\obj\Debug\net8.0\PracticeLinq.pdb
+C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\PracticeLinq\obj\Debug\net8.0\PracticeLinq.genruntimeconfig.cache
+C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\PracticeLinq\obj\Debug\net8.0\ref\PracticeLinq.dll
