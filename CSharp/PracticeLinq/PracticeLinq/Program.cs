@@ -92,3 +92,15 @@ static string AddBinary(int a, int b)
 {
     return Convert.ToString(a + b, 2);
 }
+
+color.WriteRed("Find the unique number.");
+
+IEnumerable<int> numbers = new[] {0, 0, 0, 55, 0, 4, 4};
+
+Console.WriteLine(GetUnique(numbers));
+
+static int GetUnique(IEnumerable<int> numbers)
+{
+    //return numbers.GroupBy(num => num).Where(num => num.Count() == 1).Select(group => group.Key).FirstOrDefault();
+    return numbers.GroupBy(x => x).Single(x => x.Count() == 1).Key;
+}
