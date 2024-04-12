@@ -2,7 +2,7 @@
 using SmartCalculator.ConcreteStrategy;
 using SmartCalculator.Operations;
 
-var a = 24;
+var a = -8;
 var b = 6;
 
 Context context;

@@ -1,0 +1,15 @@
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\SmartCalculator\bin\Debug\net8.0\Calculator.Console.exe
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\SmartCalculator\bin\Debug\net8.0\Calculator.Console.deps.json
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\SmartCalculator\bin\Debug\net8.0\Calculator.Console.runtimeconfig.json
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\SmartCalculator\bin\Debug\net8.0\Calculator.Console.dll
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\SmartCalculator\bin\Debug\net8.0\Calculator.Console.pdb
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\SmartCalculator\obj\Debug\net8.0\Calculator.Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\SmartCalculator\obj\Debug\net8.0\Calculator.Console.AssemblyInfoInputs.cache
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\SmartCalculator\obj\Debug\net8.0\Calculator.Console.AssemblyInfo.cs
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\SmartCalculator\obj\Debug\net8.0\Calculator.Console.csproj.CoreCompileInputs.cache
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\SmartCalculator\obj\Debug\net8.0\Calculator.Console.sourcelink.json
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\SmartCalculator\obj\Debug\net8.0\Calculator.Console.dll
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\SmartCalculator\obj\Debug\net8.0\refint\Calculator.Console.dll
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\SmartCalculator\obj\Debug\net8.0\Calculator.Console.pdb
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\SmartCalculator\obj\Debug\net8.0\Calculator.Console.genruntimeconfig.cache
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\SmartCalculator\obj\Debug\net8.0\ref\Calculator.Console.dll
