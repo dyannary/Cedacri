@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\crme146\\.nuget\\packages\\": {}
+    "C:\\Users\\Diana\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\crme146\\Personal\\Moodle\\CSharp\\Calculator\\Calculator.Web\\Calculator.Web.csproj",
+      "projectUniqueName": "D:\\DIANA\\Cedacri\\CSharp\\Calculator\\Calculator.Web\\Calculator.Web.csproj",
       "projectName": "Calculator.Web",
-      "projectPath": "C:\\Users\\crme146\\Personal\\Moodle\\CSharp\\Calculator\\Calculator.Web\\Calculator.Web.csproj",
-      "packagesPath": "C:\\Users\\crme146\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\crme146\\Personal\\Moodle\\CSharp\\Calculator\\Calculator.Web\\obj\\",
+      "projectPath": "D:\\DIANA\\Cedacri\\CSharp\\Calculator\\Calculator.Web\\Calculator.Web.csproj",
+      "packagesPath": "C:\\Users\\Diana\\.nuget\\packages\\",
+      "outputPath": "D:\\DIANA\\Cedacri\\CSharp\\Calculator\\Calculator.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\crme146\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Diana\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -40,11 +40,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -69,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

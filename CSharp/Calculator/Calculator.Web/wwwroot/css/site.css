@@ -21,7 +21,7 @@ body{
     justify-content: center;
 }
 
-.wrapper{
+.wrapper {
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
     background: rgba(255, 255, 255, 0.75);
@@ -33,9 +33,15 @@ body{
     -webkit-backdrop-filter: blur(4px);
     background: rgba(35, 35, 35, 0.30);
     border: 1px solid rgba(255, 255, 255, 0.34);
-    flex-basis: 400px;
-    height: 740px;
-    padding: 30px 35px;
+    /*flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px;*/
+    flex-basis: 500px;
+    /*padding: 20px 35px;*/
+    width: 500px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .screen {
@@ -44,16 +50,20 @@ body{
     background: rgba(255, 255, 255, 0.75);
     border: 1px solid rgba(255, 255, 255, 0.01);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.01);
+    box-shadow: 0 15px 30px rgba(35, 35, 35, 0.01);
     color: #232323;
     font-size: 35px;
     overflow: auto;
-    padding: 20px;
+    padding: 8px;
     text-align: right;
-    
+    width: 443px;
     /*Not working*/
-    width: 6px;
+    /*width: 100%;*/
 }
+
+/*.calc-buttons{
+    margin-top: 20px;
+}*/
 
 .calc-button-row{
     display: flex;
@@ -61,7 +71,7 @@ body{
     margin: 5% 0;
 }
 
-.calc-button {
+.calc-button{
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
     background: rgba(255, 255, 255, 0.75);
