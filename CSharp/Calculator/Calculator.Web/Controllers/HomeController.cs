@@ -1,32 +1,42 @@
 using Calculator.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using Calculator;
+using Calculator.Algorithm;
 
 namespace Calculator.Web.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly DijkstraTwoStack _dijkstraTwoStack;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, DijkstraTwoStack dijkstraTwoStack)
         {
             _logger = logger;
+            _dijkstraTwoStack = dijkstraTwoStack;
         }
 
-        public IActionResult Index()
+
+        public ActionResult Index()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        [HttpPost]
+        public ActionResult CalculateExpression([FromBody] string expression)
         {
-            return View();
-        }
+            try
+            {
+                var result = _dijkstraTwoStack.Calculate(expression);
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+                return Json(new { StatusCode = 200, result });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Error calculating expression: {ex.Message}");
+            }
         }
+        
     }
 }

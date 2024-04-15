@@ -1,5 +1,5 @@
-﻿using SmartCalculator;
-using SmartCalculator.ConcreteStrategy;
+﻿using Calculator.Algorithm;
+using SmartCalculator;
 using SmartCalculator.Operations;
 
 var a = -8;
@@ -31,7 +31,7 @@ DijkstraTwoStack calculate = new DijkstraTwoStack();
 ConsoleKey input;
 string expression;
 
-int result = 0;
+decimal result = 0;
 
 while (true)
 {
@@ -42,7 +42,7 @@ while (true)
     if (keyInfo.Key == ConsoleKey.Escape)
         return 0;
 #pragma warning disable CS8600
-    expression = result + " " + Console.ReadLine();
+    expression ="0" + result + " " + Console.ReadLine();
 #pragma warning restore CS8600
 
     if (expression is null)
@@ -51,7 +51,6 @@ while (true)
     }
 
     result = calculate.Calculate(expression);
-
 
     Console.WriteLine("Result is: " + result);
 }

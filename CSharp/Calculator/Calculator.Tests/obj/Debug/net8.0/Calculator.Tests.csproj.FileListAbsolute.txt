@@ -1,8 +1,5 @@
 C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator.Tests\bin\Debug\net8.0\CoverletSourceRootsMapping_Calculator.Tests
 C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator.Tests\bin\Debug\net8.0\testhost.dll
-C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator.Tests\bin\Debug\net8.0\Calculator.deps.json
-C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator.Tests\bin\Debug\net8.0\Calculator.runtimeconfig.json
-C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator.Tests\bin\Debug\net8.0\Calculator.exe
 C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator.Tests\bin\Debug\net8.0\testhost.exe
 C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator.Tests\bin\Debug\net8.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator.Tests\bin\Debug\net8.0\xunit.runner.reporters.netcoreapp10.dll
@@ -90,8 +87,6 @@ C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator.Tests\bin\Debug\ne
 C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator.Tests\bin\Debug\net8.0\Calculator.dll
-C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator.Tests\bin\Debug\net8.0\Calculator.pdb
 C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator.Tests\obj\Debug\net8.0\Calculator.Tests.csproj.AssemblyReference.cache
 C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator.Tests\obj\Debug\net8.0\Calculator.Tests.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator.Tests\obj\Debug\net8.0\Calculator.Tests.AssemblyInfoInputs.cache
@@ -210,3 +205,5 @@ D:\DIANA\Cedacri\CSharp\Calculator\Calculator.Tests\obj\Debug\net8.0\refint\Calc
 D:\DIANA\Cedacri\CSharp\Calculator\Calculator.Tests\obj\Debug\net8.0\Calculator.Tests.pdb
 D:\DIANA\Cedacri\CSharp\Calculator\Calculator.Tests\obj\Debug\net8.0\Calculator.Tests.genruntimeconfig.cache
 D:\DIANA\Cedacri\CSharp\Calculator\Calculator.Tests\obj\Debug\net8.0\ref\Calculator.Tests.dll
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator.Tests\bin\Debug\net8.0\Calculator.dll
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator.Tests\bin\Debug\net8.0\Calculator.pdb

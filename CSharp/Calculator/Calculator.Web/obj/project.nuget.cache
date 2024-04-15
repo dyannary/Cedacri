@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "9Dd3iXjOwkboPPJOGaigg/eTBT1FCgoSMV3DS/8nuwXwEvnjGjB2S1yjc6nPdQVOBeXs6d9PP29Fwk2KbHukvQ==",
+  "dgSpecHash": "U2VDtSjDB52Zvc1iscK4dTvn4R88H4Wd2n5/fJTcc0RAIDbH5snwvUva7OG23wnfh7T3KXTQEK3ws9DToaQ4tQ==",
   "success": true,
-  "projectFilePath": "D:\\DIANA\\Cedacri\\CSharp\\Calculator\\Calculator.Web\\Calculator.Web.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\crme146\\Personal\\Moodle\\CSharp\\Calculator\\Calculator.Web\\Calculator.Web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\crme146\\.nuget\\packages\\bootstrap\\5.3.3\\bootstrap.5.3.3.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -60,3 +60,7 @@ D:\DIANA\Cedacri\CSharp\Calculator\Calculator.Web\obj\Debug\net8.0\refint\Calcul
 D:\DIANA\Cedacri\CSharp\Calculator\Calculator.Web\obj\Debug\net8.0\Calculator.Web.pdb
 D:\DIANA\Cedacri\CSharp\Calculator\Calculator.Web\obj\Debug\net8.0\Calculator.Web.genruntimeconfig.cache
 D:\DIANA\Cedacri\CSharp\Calculator\Calculator.Web\obj\Debug\net8.0\ref\Calculator.Web.dll
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator.Web\bin\Debug\net8.0\Calculator.dll
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator.Web\bin\Debug\net8.0\Calculator.pdb
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator.Web\obj\Debug\net8.0\Calculator.Web.csproj.AssemblyReference.cache
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator.Web\obj\Debug\net8.0\Calculat.76F327F9.Up2Date

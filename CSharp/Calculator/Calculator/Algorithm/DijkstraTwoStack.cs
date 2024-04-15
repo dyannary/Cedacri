@@ -4,12 +4,12 @@ namespace Calculator.Algorithm
 {
     public class DijkstraTwoStack
     {
-        public int Calculate(string expession)
+        public decimal Calculate(string expession)
         {
             char[] tokens = expession.ToCharArray();
 
             Stack<char> ops = new Stack<char>();
-            Stack<int> values = new Stack<int>();
+            Stack<decimal> values = new Stack<decimal>();
 
             for (var i = 0; i < tokens.Length; i++)
             {
@@ -17,16 +17,16 @@ namespace Calculator.Algorithm
                 {
                     continue;
                 }
-                if (tokens[i] >= '0' && tokens[i] <= '9')
+                if (char.IsDigit(tokens[i]) || tokens[i] == '.')
                 {
                     StringBuilder buf = new StringBuilder();
 
-                    while (i < tokens.Length && tokens[i] >= '0' && tokens[i] <= '9')
+                    while (i < tokens.Length && (char.IsDigit(tokens[i]) || tokens[i] == '.'))
                     {
                         buf.Append(tokens[i++]);
                     }
 
-                    values.Push(int.Parse(buf.ToString()));
+                    values.Push(decimal.Parse(buf.ToString()));
 
                     i--;
                 }
@@ -37,42 +37,64 @@ namespace Calculator.Algorithm
                 }
                 else if (tokens[i] == ')')
                 {
-                    while (ops.Peek() != '(')
-                    {
-                        values.Push(Operation(ops.Pop(), values.Pop(), values.Pop()));
-                    }
-                    ops.Pop();
+                    values.Push(Operation(ops.Pop(), values.Pop(), values.Pop()));
+
+                    //while (ops.Peek() != '(')
+                    //{
+                    //    values.Push(Operation(ops.Pop(), values.Pop(), values.Pop()));
+                    //}
+                    //ops.Pop();
                 }
-                else if(tokens[i] == '+' ||
+                else if (tokens[i] == '+' ||
                         tokens[i] == '-' ||
                         tokens[i] == '*' ||
-                        tokens[i] == '/')
+                        tokens[i] == '/' ||
+                        tokens[i] == '.')
                 {
-                    while(ops.Count > 0 && hasPrecedence(tokens[i],
+                    while (ops.Count > 0 && hasPrecedence(tokens[i],
                                  ops.Peek()))
                     {
-                        values.Push(Operation(ops.Pop(), values.Pop(), values.Pop()));
+                        if (values.Count < 2)
+                        {
+                            new InvalidOperationException("Not enough operands for operation.");
+                            break;
+                        }
+                        else
+                            values.Push(Operation(ops.Pop(), values.Pop(), values.Pop()));
                     }
 
                     ops.Push(tokens[i]);
                 }
             }
-            while(ops.Count > 0)
+            while (ops.Count > 0)
             {
-                values.Push(Operation(ops.Pop(),
+                try
+                {
+                    values.Push(Operation(ops.Pop(),
                          values.Pop(),
                         values.Pop()));
+                }
+                catch
+                {
+                    throw new
+                        System.InvalidOperationException(
+                               "Argument exception");
+                }
             }
 
             return values.Pop();
         }
-        static int Operation(int op, int b, int a)
+        static decimal Operation(decimal op, decimal b, decimal a)
         {
             switch (op)
             {
                 case '+':
                     return a + b;
                 case '-':
+                    if (a < 0)
+                    {
+                        return 0 + a - b;
+                    }
                     return a - b;
                 case '*':
                     return a * b;
@@ -80,10 +102,12 @@ namespace Calculator.Algorithm
                     if (b == 0)
                     {
                         throw new
-                        System.NotSupportedException(
+                        System.InvalidOperationException(
                                "Cannot divide by zero");
                     }
                     return a / b;
+                //case '^':
+                //    return a 
             }
             return 0;
         }

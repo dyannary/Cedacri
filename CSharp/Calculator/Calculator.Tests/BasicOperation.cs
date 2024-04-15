@@ -1,4 +1,4 @@
-using SmartCalculator.ConcreteStrategy;
+using Calculator.Algorithm;
 
 namespace CalculatorTests
 {
@@ -9,33 +9,31 @@ namespace CalculatorTests
         [Fact]
         public void AddTwoNumbers()
         {
-            int actual = calculate.Calculate($"3+5");
-
-            Assert.Equal(8, actual);
+            Assert.Equal(8, calculate.Calculate($"3+5"));
         }
 
         [Fact]
         public void SubstractTwoNumbers()
         {
-            int actual = calculate.Calculate($"3-8");
-
-            Assert.Equal(-5, actual);
+            Assert.Equal(-5, calculate.Calculate($"3-8"));
         }
 
         [Fact]
         public void MultiplyTwoNumbers()
         {
-            int actual = calculate.Calculate($"7*6");
-
-            Assert.Equal(42, actual);
+            Assert.Equal(42, calculate.Calculate($"7*6"));
         }
 
         [Fact]
         public void DivideTwoNumbers()
         {
-            int actual = calculate.Calculate($"8/2");
+            Assert.Equal(4, calculate.Calculate($"8/2"));
+        }
 
-            Assert.Equal(4, actual);
+        [Fact]
+        public void Divide_TwoNumbers_ExpectException()
+        {
+            Assert.Throws<InvalidOperationException>(() => calculate.Calculate("10/0"));
         }
     }
 }

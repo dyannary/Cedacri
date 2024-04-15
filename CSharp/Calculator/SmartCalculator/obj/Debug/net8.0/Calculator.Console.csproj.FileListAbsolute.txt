@@ -28,3 +28,7 @@ D:\DIANA\Cedacri\CSharp\Calculator\SmartCalculator\obj\Debug\net8.0\refint\Calcu
 D:\DIANA\Cedacri\CSharp\Calculator\SmartCalculator\obj\Debug\net8.0\Calculator.Console.pdb
 D:\DIANA\Cedacri\CSharp\Calculator\SmartCalculator\obj\Debug\net8.0\Calculator.Console.genruntimeconfig.cache
 D:\DIANA\Cedacri\CSharp\Calculator\SmartCalculator\obj\Debug\net8.0\ref\Calculator.Console.dll
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\SmartCalculator\bin\Debug\net8.0\Calculator.dll
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\SmartCalculator\bin\Debug\net8.0\Calculator.pdb
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\SmartCalculator\obj\Debug\net8.0\Calculator.Console.csproj.AssemblyReference.cache
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\SmartCalculator\obj\Debug\net8.0\Calculat.4DDDDE95.Up2Date
