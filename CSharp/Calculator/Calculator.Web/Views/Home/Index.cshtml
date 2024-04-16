@@ -120,10 +120,8 @@
             var expression = document.getElementById('expressionScreen').innerText;
             var lastChar = expression[expression.length - 1];
 
-            // Check if the last character is a special character
             var noRepeatChars = ['(', ')', '+', '-', '*', '÷', '.'];
             if (noRepeatChars.includes(lastChar) && lastChar === char) {
-                // If both the last character and the new character are special, don't append
                 return;
             }
             if (expression === '0') {

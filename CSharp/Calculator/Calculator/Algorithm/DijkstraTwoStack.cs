@@ -4,9 +4,9 @@ namespace Calculator.Algorithm
 {
     public class DijkstraTwoStack
     {
-        public decimal Calculate(string expession)
+        public decimal Calculate(string expression)
         {
-            char[] tokens = expession.ToCharArray();
+            char[] tokens = expression.ToCharArray();
 
             Stack<char> ops = new Stack<char>();
             Stack<decimal> values = new Stack<decimal>();
@@ -32,18 +32,23 @@ namespace Calculator.Algorithm
                 }
 
                 else if (tokens[i] == '(')
-                {
+                { 
                     ops.Push(tokens[i]);
                 }
                 else if (tokens[i] == ')')
                 {
-                    values.Push(Operation(ops.Pop(), values.Pop(), values.Pop()));
+                    while (ops.Peek() != '(')
+                    {
+                        values.Push(Operation(ops.Pop(), values.Pop(), values.Pop()));
+                    }
+                    ops.Pop();
 
-                    //while (ops.Peek() != '(')
-                    //{
-                    //    values.Push(Operation(ops.Pop(), values.Pop(), values.Pop()));
-                    //}
-                    //ops.Pop();
+                    if (ops.Count > 0 && ops.Peek() == '-')
+                    {
+                        values.Push(-values.Pop()); // Negate the result if the previous operation was unary minus
+                        ops.Pop(); // Pop the unary minus operator
+                    }
+                    
                 }
                 else if (tokens[i] == '+' ||
                         tokens[i] == '-' ||
@@ -64,6 +69,10 @@ namespace Calculator.Algorithm
                     }
 
                     ops.Push(tokens[i]);
+                }
+                else
+                {
+                    new InvalidDataException("Not enough operands for operation.");
                 }
             }
             while (ops.Count > 0)
@@ -93,7 +102,7 @@ namespace Calculator.Algorithm
                 case '-':
                     if (a < 0)
                     {
-                        return 0 + a - b;
+                        return a - b;
                     }
                     return a - b;
                 case '*':
@@ -106,8 +115,6 @@ namespace Calculator.Algorithm
                                "Cannot divide by zero");
                     }
                     return a / b;
-                //case '^':
-                //    return a 
             }
             return 0;
         }

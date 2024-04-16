@@ -1,56 +1,39 @@
-﻿using Calculator.Algorithm;
-using SmartCalculator;
-using SmartCalculator.Operations;
+﻿using Calculator;
+using Calculator.Algorithm;
 
-var a = -8;
-var b = 6;
+Colors color = new Colors();
 
-Context context;
-
-context = new Context(new Addition());
-int addition = context.Execute(a, b);
-
-context = new Context(new Substraction());
-int substraction = context.Execute(a, b);
-
-context = new Context(new Multiplication());
-int multiplication = context.Execute(a, b);
-
-context = new Context(new Division());
-int division = context.Execute(a, b);
-
-Console.WriteLine(addition);
-Console.WriteLine(substraction);
-Console.WriteLine(multiplication);
-Console.WriteLine(division);
-
-Console.WriteLine();
+color.WriteGrey("Calculate expression\n\n");
 
 DijkstraTwoStack calculate = new DijkstraTwoStack();
 
-ConsoleKey input;
 string expression;
 
 decimal result = 0;
 
 while (true)
 {
-    if (result != 0)
-        Console.Write(result);
-    ConsoleKeyInfo keyInfo = Console.ReadKey(true);
-
-    if (keyInfo.Key == ConsoleKey.Escape)
-        return 0;
-#pragma warning disable CS8600
-    expression ="0" + result + " " + Console.ReadLine();
-#pragma warning restore CS8600
-
-    if (expression is null)
+    try
     {
-        return 0;
+        if (result != 0)
+            Console.Write(result);
+        ConsoleKeyInfo keyInfo = Console.ReadKey(true);
+
+        if (keyInfo.Key == ConsoleKey.Escape)
+            return 0;
+#pragma warning disable CS8600
+        expression = "0" + result + " " + Console.ReadLine();
+#pragma warning restore CS8600
+        ValidationService.ValidateExpression(expression);
+
+        result = calculate.Calculate(expression);
+
+        color.WriteCyan("Result is: " + result);
     }
-
-    result = calculate.Calculate(expression);
-
-    Console.WriteLine("Result is: " + result);
+    catch (ArgumentException ex)
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine(ex.Message);
+        Console.ResetColor();
+    }
 }

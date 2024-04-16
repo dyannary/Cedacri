@@ -1,7 +1,4 @@
-using Calculator.Web.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
-using Calculator;
 using Calculator.Algorithm;
 
 namespace Calculator.Web.Controllers
