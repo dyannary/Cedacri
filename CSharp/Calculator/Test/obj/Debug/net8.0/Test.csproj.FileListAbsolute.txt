@@ -1,0 +1,15 @@
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Test\bin\Debug\net8.0\Test.exe
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Test\bin\Debug\net8.0\Test.deps.json
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Test\bin\Debug\net8.0\Test.runtimeconfig.json
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Test\bin\Debug\net8.0\Test.dll
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Test\bin\Debug\net8.0\Test.pdb
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Test\obj\Debug\net8.0\Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Test\obj\Debug\net8.0\Test.AssemblyInfoInputs.cache
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Test\obj\Debug\net8.0\Test.AssemblyInfo.cs
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Test\obj\Debug\net8.0\Test.csproj.CoreCompileInputs.cache
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Test\obj\Debug\net8.0\Test.sourcelink.json
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Test\obj\Debug\net8.0\Test.dll
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Test\obj\Debug\net8.0\refint\Test.dll
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Test\obj\Debug\net8.0\Test.pdb
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Test\obj\Debug\net8.0\Test.genruntimeconfig.cache
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Test\obj\Debug\net8.0\ref\Test.dll

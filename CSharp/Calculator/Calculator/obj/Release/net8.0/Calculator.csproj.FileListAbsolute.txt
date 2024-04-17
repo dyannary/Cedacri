@@ -1,0 +1,12 @@
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator\bin\Release\net8.0\Calculator.deps.json
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator\bin\Release\net8.0\Calculator.dll
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator\bin\Release\net8.0\Calculator.pdb
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator\obj\Release\net8.0\Calculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator\obj\Release\net8.0\Calculator.AssemblyInfoInputs.cache
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator\obj\Release\net8.0\Calculator.AssemblyInfo.cs
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator\obj\Release\net8.0\Calculator.csproj.CoreCompileInputs.cache
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator\obj\Release\net8.0\Calculator.sourcelink.json
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator\obj\Release\net8.0\Calculator.dll
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator\obj\Release\net8.0\refint\Calculator.dll
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator\obj\Release\net8.0\Calculator.pdb
+C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator\obj\Release\net8.0\ref\Calculator.dll

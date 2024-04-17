@@ -3,7 +3,7 @@ using Calculator.Algorithm;
 
 Colors color = new Colors();
 
-color.WriteGrey("Calculate expression\n\n");
+color.WriteGrey("Calculate expression\n");
 
 DijkstraTwoStack calculate = new DijkstraTwoStack();
 
@@ -15,20 +15,18 @@ while (true)
 {
     try
     {
-        if (result != 0)
-            Console.Write(result);
         ConsoleKeyInfo keyInfo = Console.ReadKey(true);
 
         if (keyInfo.Key == ConsoleKey.Escape)
             return 0;
 #pragma warning disable CS8600
-        expression = "0" + result + " " + Console.ReadLine();
+        expression = Console.ReadLine();
 #pragma warning restore CS8600
         ValidationService.ValidateExpression(expression);
 
         result = calculate.Calculate(expression);
 
-        color.WriteCyan("Result is: " + result);
+        color.WriteGreen ("Result is: " + result);
     }
     catch (ArgumentException ex)
     {

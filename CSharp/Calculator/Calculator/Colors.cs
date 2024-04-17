@@ -36,5 +36,12 @@
             Console.WriteLine(text);
             Console.ResetColor();
         }
+
+        public void WriteGreen(string text)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(text);
+            Console.ResetColor();
+        }
     }
 }

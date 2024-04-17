@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Calculator.Algorithm;
+using Calculator.Web.Models;
 
 namespace Calculator.Web.Controllers
 {
@@ -17,7 +18,11 @@ namespace Calculator.Web.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            CalculatorModel calculatorModel = new CalculatorModel();
+
+            calculatorModel.Expression = "calculator";
+
+            return View(calculatorModel);
         }
 
         [HttpPost]

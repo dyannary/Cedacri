@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator.Console", "Smart
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator.Tests", "Calculator.Tests\Calculator.Tests.csproj", "{F2BE8419-F1BD-48D6-9E72-5C8693FEB8D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{9BD9D730-43E4-43F5-8D45-46CE7BE04C88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator", "Calculator\Calculator.csproj", "{9BD9D730-43E4-43F5-8D45-46CE7BE04C88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Web", "Calculator.Web\Calculator.Web.csproj", "{4BB2092A-4295-4A51-B2DF-5CAACEF50793}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator.Web", "Calculator.Web\Calculator.Web.csproj", "{4BB2092A-4295-4A51-B2DF-5CAACEF50793}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{F123C4BB-C3F0-4F98-A1C1-7959B9379A63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{4BB2092A-4295-4A51-B2DF-5CAACEF50793}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BB2092A-4295-4A51-B2DF-5CAACEF50793}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BB2092A-4295-4A51-B2DF-5CAACEF50793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F123C4BB-C3F0-4F98-A1C1-7959B9379A63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F123C4BB-C3F0-4F98-A1C1-7959B9379A63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F123C4BB-C3F0-4F98-A1C1-7959B9379A63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F123C4BB-C3F0-4F98-A1C1-7959B9379A63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

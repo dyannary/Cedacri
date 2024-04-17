@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using System.Timers;
 
 namespace Calculator.Algorithm
 {
@@ -6,6 +7,8 @@ namespace Calculator.Algorithm
     {
         public decimal Calculate(string expression)
         {
+            expression = expression.Replace(" ", "");
+
             char[] tokens = expression.ToCharArray();
 
             Stack<char> ops = new Stack<char>();
@@ -13,10 +16,6 @@ namespace Calculator.Algorithm
 
             for (var i = 0; i < tokens.Length; i++)
             {
-                if (tokens[i] == ' ')
-                {
-                    continue;
-                }
                 if (char.IsDigit(tokens[i]) || tokens[i] == '.')
                 {
                     StringBuilder buf = new StringBuilder();
@@ -32,7 +31,16 @@ namespace Calculator.Algorithm
                 }
 
                 else if (tokens[i] == '(')
-                { 
+                {
+                    if(i - 1 >= 0)
+                    {
+                        if ((char.IsDigit(tokens[i - 1]) || tokens[i - 1] == ')'))
+                        {
+                            ops.Push('*');
+
+                        }
+                    }
+                    
                     ops.Push(tokens[i]);
                 }
                 else if (tokens[i] == ')')
@@ -42,13 +50,6 @@ namespace Calculator.Algorithm
                         values.Push(Operation(ops.Pop(), values.Pop(), values.Pop()));
                     }
                     ops.Pop();
-
-                    if (ops.Count > 0 && ops.Peek() == '-')
-                    {
-                        values.Push(-values.Pop()); // Negate the result if the previous operation was unary minus
-                        ops.Pop(); // Pop the unary minus operator
-                    }
-                    
                 }
                 else if (tokens[i] == '+' ||
                         tokens[i] == '-' ||
@@ -56,19 +57,32 @@ namespace Calculator.Algorithm
                         tokens[i] == '/' ||
                         tokens[i] == '.')
                 {
-                    while (ops.Count > 0 && hasPrecedence(tokens[i],
-                                 ops.Peek()))
+                    if (tokens[i-1] == '+' || 
+                        tokens[i-1] == '-' || 
+                        tokens[i-1] == '(' || 
+                        tokens[i - 1] == '*' ||
+                        tokens[i - 1] == '/')
                     {
-                        if (values.Count < 2)
-                        {
-                            new InvalidOperationException("Not enough operands for operation.");
-                            break;
-                        }
-                        else
-                            values.Push(Operation(ops.Pop(), values.Pop(), values.Pop()));
+                        ops.Push(tokens[i]);
+                        values.Push(0);
                     }
+                    else
+                    {
 
-                    ops.Push(tokens[i]);
+                        while (ops.Count > 0 && hasPrecedence(tokens[i],
+                                 ops.Peek()))
+                        {
+                            if (values.Count < 2)
+                            {
+                                new InvalidOperationException("Not enough operands for operation.");
+                                break;
+                            }
+                            else
+                                values.Push(Operation(ops.Pop(), values.Pop(), values.Pop()));
+                        }
+
+                        ops.Push(tokens[i]);
+                    }
                 }
                 else
                 {
@@ -131,9 +145,7 @@ namespace Calculator.Algorithm
                 return false;
             }
             else
-            {
                 return true;
-            }
         }
     }
 }

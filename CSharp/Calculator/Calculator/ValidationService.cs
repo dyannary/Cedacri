@@ -9,8 +9,6 @@ namespace Calculator
 
         public static void ValidateExpression(string expression)
         {
-            // cand avem ++, --, +-, *-, /- etc
-
             if (string.IsNullOrEmpty(expression) || expression == "00 ")
                 throw new ArgumentException("The expression cannot be empty.");
 
@@ -20,33 +18,52 @@ namespace Calculator
                 throw new ArgumentException("The expression cannot contain words.");
             }
 
-            if (ValidateNumber(expression))
-            {
-                throw new ArgumentException("Number after decimal point should not greater than 12.");
-            }
-
             if (!UnbalancedBrakets(expression))
             {
                 throw new ArgumentException("The brackets are unbalanced.");
             }
 
+            if (DuplicateOperands(expression))
+            {
+                throw new ArgumentException("Operand should not repeat twice or more.");
+            }
+
+            if (DivideZero(expression))
+            {
+                throw new ArgumentException("Division by zero does not exist.");
+            }
+
+            if (BracketsAfterDigit(expression))
+            {
+                throw new ArgumentException("Cannot add bracket after digit. Place * to multiply.");
+            }
+
             Console.ResetColor();
         }
 
-        public static bool ContainsWords(string input)
+        public static bool ContainsWords(string expression)
         {
-            return Regex.IsMatch(input, "[a-zA-Z!@#$%&=';.,]");
-        }
-
-        public static bool ValidateNumber(string expression)
-        {
-            return Regex.IsMatch(expression, @"^(?!(\d{10,}\.\d*|\d*\.\d{10,}))[0-9.+-/*]+$");
+            return Regex.IsMatch(expression, "[a-zA-Z!@#$%&=';,]");
         }
 
         public static bool UnbalancedBrakets(string expression)
         {
             int count = expression.Count(c => c == '(') - expression.Count(c => c == ')');
             return count == 0;
+        }
+
+        public static bool DuplicateOperands(string expression)
+        {
+            return Regex.IsMatch(expression, @"([+*]{2})+");
+        }
+
+        public static bool DivideZero(string expression)
+        {
+            return Regex.IsMatch(expression, @"\/0");
+        }
+        public static bool BracketsAfterDigit(string expression)
+        {
+            return Regex.IsMatch(expression, @"\d\(");
         }
     }
 }

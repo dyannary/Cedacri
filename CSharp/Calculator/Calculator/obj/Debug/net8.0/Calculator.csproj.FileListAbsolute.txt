@@ -1,15 +1,3 @@
-D:\DIANA\Cedacri\CSharp\Calculator\Calculator\bin\Debug\net8.0\Calculator.deps.json
-D:\DIANA\Cedacri\CSharp\Calculator\Calculator\bin\Debug\net8.0\Calculator.dll
-D:\DIANA\Cedacri\CSharp\Calculator\Calculator\bin\Debug\net8.0\Calculator.pdb
-D:\DIANA\Cedacri\CSharp\Calculator\Calculator\obj\Debug\net8.0\Calculator.GeneratedMSBuildEditorConfig.editorconfig
-D:\DIANA\Cedacri\CSharp\Calculator\Calculator\obj\Debug\net8.0\Calculator.AssemblyInfoInputs.cache
-D:\DIANA\Cedacri\CSharp\Calculator\Calculator\obj\Debug\net8.0\Calculator.AssemblyInfo.cs
-D:\DIANA\Cedacri\CSharp\Calculator\Calculator\obj\Debug\net8.0\Calculator.csproj.CoreCompileInputs.cache
-D:\DIANA\Cedacri\CSharp\Calculator\Calculator\obj\Debug\net8.0\Calculator.sourcelink.json
-D:\DIANA\Cedacri\CSharp\Calculator\Calculator\obj\Debug\net8.0\Calculator.dll
-D:\DIANA\Cedacri\CSharp\Calculator\Calculator\obj\Debug\net8.0\refint\Calculator.dll
-D:\DIANA\Cedacri\CSharp\Calculator\Calculator\obj\Debug\net8.0\Calculator.pdb
-D:\DIANA\Cedacri\CSharp\Calculator\Calculator\obj\Debug\net8.0\ref\Calculator.dll
 C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator\bin\Debug\net8.0\Calculator.deps.json
 C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator\bin\Debug\net8.0\Calculator.dll
 C:\Users\crme146\Personal\Moodle\CSharp\Calculator\Calculator\bin\Debug\net8.0\Calculator.pdb

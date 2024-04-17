@@ -10,7 +10,7 @@ namespace Calculator.Tests
         {
             yield return new object[] { "2+10-2*(2+3))"};
             yield return new object[] { "3+10-2*(2+3"};
-            yield return new object[] { "4+10-2(2+3)"};
+            yield return new object[] { "4+10-2(2+3))"};
             yield return new object[] { "5+10-2*(-1-(2+3)"};
         }
 

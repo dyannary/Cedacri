@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@model CalculatorModel
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,101 +11,102 @@
 </head>
  
 <body>
-    <div class="wrapper">
-        <section class="screen" id="expressionScreen">
-            0
-        </section>
-        <section class="calc-buttons">
+    <form method="post" action="Home/CalculateExpression">
+        <div class="wrapper">
+            <input class="screen" name="expressionScreen" value="@Model.Expression">
+            </input>
+            <section class="calc-buttons">
 
-            <div class="calc-button-row">
-                <button class="calc-button double" onclick="clearScreen()">
-                    C
-                </button>
-                <button class="calc-button" onclick="deleteLastChar()">
-                    &larr;
-                </button>
-            </div>
+                <div class="calc-button-row">
+                    <button class="calc-button double" onclick="clearScreen()">
+                        C
+                    </button>
+                    <button class="calc-button" onclick="deleteLastChar()">
+                        &larr;
+                    </button>
+                </div>
 
-            <div class="calc-button-row">
-                <button class="calc-button" onclick="appendToExpression('(')">
-                    (
-                </button>
-                <button class="calc-button" onclick="appendToExpression(')')">
-                    )
-                </button>
-                <button class="calc-button" onclick="">
-                    ^
-                </button>
-                <button class="calc-button" onclick="appendToExpression('÷')">
-                    &divide;
-                </button>
-            </div>
+                <div class="calc-button-row">
+                    <button class="calc-button" onclick="appendToExpression('(')">
+                        (
+                    </button>
+                    <button class="calc-button" onclick="appendToExpression(')')">
+                        )
+                    </button>
+                    <button class="calc-button" onclick="">
+                        ^
+                    </button>
+                    <button class="calc-button" onclick="appendToExpression('÷')">
+                        &divide;
+                    </button>
+                </div>
 
-            <div class="calc-button-row">
-                <button class="calc-button" onclick="appendToExpression('7')">
-                    7
-                </button>
-                <button class="calc-button" onclick="appendToExpression('8')">
-                    8
-                </button>
-                <button class="calc-button" onclick="appendToExpression('9')">
-                    9
-                </button>
-                <button class="calc-button" onclick="appendToExpression('×'); appendToExpression('*')">
-                    &times;
-                </button>
-            </div>
+                <div class="calc-button-row">
+                    <button class="calc-button" onclick="appendToExpression('7')">
+                        7
+                    </button>
+                    <button class="calc-button" onclick="appendToExpression('8')">
+                        8
+                    </button>
+                    <button class="calc-button" onclick="appendToExpression('9')">
+                        9
+                    </button>
+                    <button class="calc-button" onclick="appendToExpression('×'); appendToExpression('*')">
+                        &times;
+                    </button>
+                </div>
 
-            <div class="calc-button-row">
-                <button class="calc-button" onclick="appendToExpression('4')">
-                    4
-                </button>
-                <button class="calc-button" onclick="appendToExpression('5')">
-                    5
-                </button>
-                <button class="calc-button" onclick="appendToExpression('6')">
-                    6
-                </button>
-                <button class="calc-button" onclick="appendToExpression('-')">
-                    &minus;
-                </button>
-            </div>
+                <div class="calc-button-row">
+                    <button class="calc-button" onclick="appendToExpression('4')">
+                        4
+                    </button>
+                    <button class="calc-button" onclick="appendToExpression('5')">
+                        5
+                    </button>
+                    <button class="calc-button" onclick="appendToExpression('6')">
+                        6
+                    </button>
+                    <button class="calc-button" onclick="appendToExpression('-')">
+                        &minus;
+                    </button>
+                </div>
 
-            <div class="calc-button-row">
-                <button class="calc-button" onclick="appendToExpression('1')">
-                    1
-                </button>
-                <button class="calc-button" onclick="appendToExpression('2')">
-                    2
-                </button>
-                <button class="calc-button" onclick="appendToExpression('3')">
-                    3
-                </button>
-                <button class="calc-button" onclick="appendToExpression('+')">
-                    &plus;
-                </button>
-            </div>
+                <div class="calc-button-row">
+                    <button class="calc-button" onclick="appendToExpression('1')">
+                        1
+                    </button>
+                    <button class="calc-button" onclick="appendToExpression('2')">
+                        2
+                    </button>
+                    <button class="calc-button" onclick="appendToExpression('3')">
+                        3
+                    </button>
+                    <button class="calc-button" onclick="appendToExpression('+')">
+                        &plus;
+                    </button>
+                </div>
 
-            <div class="calc-button-row">
-                <button class="calc-button" onclick="appendToExpression('+-')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-slash-minus" viewBox="0 0 16 16">
-                        <path d="m1.854 14.854 13-13a.5.5 0 0 0-.708-.708l-13 13a.5.5 0 0 0 .708.708M4 1a.5.5 0 0 1 .5.5v2h2a.5.5 0 0 1 0 1h-2v2a.5.5 0 0 1-1 0v-2h-2a.5.5 0 0 1 0-1h2v-2A.5.5 0 0 1 4 1m5 11a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5A.5.5 0 0 1 9 12" />
-                    </svg>
-                </button>
-                <button class="calc-button" onclick="appendToExpression('0')">
-                    0
-                </button>
-                <button class="calc-button" onclick="appendToExpression('.')">
-                    .
-                </button>
-                <button class="calc-button" onclick="calculate()">
-                    &equals;
-                </button>
-            </div>
+                <div class="calc-button-row">
+                    <button class="calc-button" onclick="appendToExpression('+-')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-slash-minus" viewBox="0 0 16 16">
+                            <path d="m1.854 14.854 13-13a.5.5 0 0 0-.708-.708l-13 13a.5.5 0 0 0 .708.708M4 1a.5.5 0 0 1 .5.5v2h2a.5.5 0 0 1 0 1h-2v2a.5.5 0 0 1-1 0v-2h-2a.5.5 0 0 1 0-1h2v-2A.5.5 0 0 1 4 1m5 11a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5A.5.5 0 0 1 9 12" />
+                        </svg>
+                    </button>
+                    <button class="calc-button" onclick="appendToExpression('0')">
+                        0
+                    </button>
+                    <button class="calc-button" onclick="appendToExpression('.')">
+                        .
+                    </button>
+                    <button class="calc-button" onclick="calculate()">
+                        &equals;
+                    </button>
+                </div>
 
-        </section>
-    </div>
-
+            </section>
+        </div>
+    </form>
+ @* 
     <script>
         function clearScreen() {
             document.getElementById('expressionScreen').innerText = '0';
@@ -157,6 +160,6 @@
                     console.error('Error:', error);
                 });
         }
-    </script>
+    </script> *@
 </body>
 </html>
