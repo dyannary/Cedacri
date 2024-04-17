@@ -113,57 +113,7 @@ Console.WriteLine("The lowest and largest: ");
 HighAndLow(lowMax);
 static void HighAndLow(string numbers)
 {
-    var result = numbers.Split(" ").ToArray();
+    var parsed = numbers.Split(" ").Select(int.Parse);
 
-    for(int i =  0; i < result.Length; i++)
-    {
-        Console.WriteLine($"Element {i} = {result[i]}");
-    }
-
-
-    Console.WriteLine("Max is: " + result.Max());
-    Console.WriteLine("Min is: " + result.Min());
-}
-
-Console.WriteLine("Practice stack: \n");
-StackEx("2+3-10");
-
-static void StackEx(string expression)
-{
-    char[] tokens = expression.ToCharArray();
-
-    foreach(var token in tokens)
-    {
-        Console.WriteLine(token);
-    }
-
-    var values = new Stack<int>();
-    var operands = new Stack<char>();
-
-    for (var i = 0; i < tokens.Length; i++)
-    {
-        Console.WriteLine($"Before if: {tokens[i]}");
-
-        if (char.IsDigit(tokens[i]))
-        {
-            Console.WriteLine($"After if: {tokens[i]}");
-            values.Push(tokens[i]);
-        }
-        else
-        {
-            operands.Push(tokens[i]);
-        }
-    }
-
-    Console.WriteLine("Print operands: ");
-    foreach (var element in operands)
-    {
-        Console.WriteLine(element + " ");
-    }
-
-    Console.WriteLine("Print values: ");
-    foreach (int el in values)
-    {
-        Console.WriteLine(el + " ");
-    }
+    Console.WriteLine(parsed.Max() + " " + parsed.Min());
 }
