@@ -4111,11 +4111,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\crme146\\Personal\\Learn\\MvcBasics\\MvcBasics\\MvcBasics.csproj",
+      "projectUniqueName": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\MvcBasics.csproj",
       "projectName": "MvcBasics",
-      "projectPath": "C:\\Users\\crme146\\Personal\\Learn\\MvcBasics\\MvcBasics\\MvcBasics.csproj",
+      "projectPath": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\MvcBasics.csproj",
       "packagesPath": "C:\\Users\\crme146\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\crme146\\Personal\\Learn\\MvcBasics\\MvcBasics\\obj\\",
+      "outputPath": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\crme146\\AppData\\Roaming\\NuGet\\NuGet.Config",

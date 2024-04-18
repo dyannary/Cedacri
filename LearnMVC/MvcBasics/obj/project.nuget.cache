@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HSzlqB+dCGjuW8DgcnxlOQ5s6asi8a1DdUo/sX7in6JwF/krJT3eV2rRdHLkIvx0R7Pd/Sr6d6beP5z0U/3/OQ==",
+  "dgSpecHash": "k9Yo8BziBhEFfhSvMav30AzEuHe9ih8lhWwNHXBJ5wyRbu4bHM1jiqUMcJqpk10lfcd1xImvFE9fiNsmlyZqqQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\crme146\\Personal\\Learn\\MvcBasics\\MvcBasics\\MvcBasics.csproj",
+  "projectFilePath": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\MvcBasics.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\crme146\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\crme146\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
