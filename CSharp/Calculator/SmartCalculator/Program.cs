@@ -20,7 +20,7 @@ while (true)
         if (keyInfo.Key == ConsoleKey.Escape)
             return 0;
 #pragma warning disable CS8600
-        expression = Console.ReadLine();
+        expression = "0+" + Console.ReadLine();
 #pragma warning restore CS8600
         ValidationService.ValidateExpression(expression);
 

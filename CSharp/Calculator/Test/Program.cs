@@ -1,3 +1,3 @@
-﻿int a = 3+3;
+﻿int a = 3**4;
 
 Console.WriteLine(a);

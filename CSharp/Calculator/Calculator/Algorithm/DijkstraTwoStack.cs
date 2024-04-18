@@ -1,5 +1,4 @@
 ﻿using System.Text;
-using System.Timers;
 
 namespace Calculator.Algorithm
 {
@@ -37,7 +36,6 @@ namespace Calculator.Algorithm
                         if ((char.IsDigit(tokens[i - 1]) || tokens[i - 1] == ')'))
                         {
                             ops.Push('*');
-
                         }
                     }
                     
@@ -57,9 +55,9 @@ namespace Calculator.Algorithm
                         tokens[i] == '/' ||
                         tokens[i] == '.')
                 {
-                    if (tokens[i-1] == '+' || 
-                        tokens[i-1] == '-' || 
-                        tokens[i-1] == '(' || 
+                    if (tokens[i - 1] == '+' || 
+                        tokens[i - 1] == '-' || 
+                        tokens[i - 1] == '(' || 
                         tokens[i - 1] == '*' ||
                         tokens[i - 1] == '/')
                     {

@@ -25,17 +25,22 @@ namespace Calculator
 
             if (DuplicateOperands(expression))
             {
-                throw new ArgumentException("Operand should not repeat twice or more.");
+                throw new ArgumentException("Incorrect operand.");
+            }
+
+            if (BeforeOperators(expression))
+            {
+                throw new ArgumentException("Expression should not beggin with an operand.");
+            }
+
+            if (AfterOperators(expression))
+            {
+                throw new ArgumentException("Expression should not end with an operand.");
             }
 
             if (DivideZero(expression))
             {
                 throw new ArgumentException("Division by zero does not exist.");
-            }
-
-            if (BracketsAfterDigit(expression))
-            {
-                throw new ArgumentException("Cannot add bracket after digit. Place * to multiply.");
             }
 
             Console.ResetColor();
@@ -54,7 +59,16 @@ namespace Calculator
 
         public static bool DuplicateOperands(string expression)
         {
-            return Regex.IsMatch(expression, @"([+*]{2})+");
+            return Regex.IsMatch(expression, @"\d((?:[+-]+[*/]+))|[*/]{2}");   
+        }
+        public static bool BeforeOperators(string expression)
+        {
+            return Regex.IsMatch(expression, @"^[*/].");
+        }
+
+        public static bool AfterOperators(string expression)
+        {
+            return Regex.IsMatch(expression, @"[+\-*/]$");
         }
 
         public static bool DivideZero(string expression)
