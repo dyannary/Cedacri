@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div>
+    <button onclick="Count()" id="counter">
+        press
+    </button>
+</div>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <div>
+        <button onclick="Count()" id="counter">
+            press
+        </button>
+        <button onclick="Count2()" id="counter2">
+            press
+        </button>
+        <button onclick="Count3()" id="counter3">
+            press
+        </button>
+    </div>
+</div>
+
+<script>
+    var count = 0;
+    var count2 = 0;
+    var count3 = 0;
+
+    function Count() {
+       // debugger;
+        count++;
+        document.getElementById("counter").innerText = count;
+    }
+
+    function Count2() {
+        // debugger;
+        count2++;
+        document.getElementById("counter2").innerText = count;
+    }
+
+    function Count3() {
+        // debugger;
+        count3++;
+        document.getElementById("counter3").innerText = count;
+    }
+
+</script>
