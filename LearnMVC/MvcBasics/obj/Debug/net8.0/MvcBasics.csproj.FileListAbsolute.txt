@@ -271,3 +271,5 @@ C:\Users\crme146\Personal\Moodle\LearnMVC\MvcBasics\obj\Debug\net8.0\refint\MvcB
 C:\Users\crme146\Personal\Moodle\LearnMVC\MvcBasics\obj\Debug\net8.0\MvcBasics.pdb
 C:\Users\crme146\Personal\Moodle\LearnMVC\MvcBasics\obj\Debug\net8.0\MvcBasics.genruntimeconfig.cache
 C:\Users\crme146\Personal\Moodle\LearnMVC\MvcBasics\obj\Debug\net8.0\ref\MvcBasics.dll
+C:\Users\crme146\Personal\Moodle\LearnMVC\MvcBasics\bin\Debug\net8.0\CloudinaryDotNet.dll
+C:\Users\crme146\Personal\Moodle\LearnMVC\MvcBasics\bin\Debug\net8.0\Newtonsoft.Json.dll
