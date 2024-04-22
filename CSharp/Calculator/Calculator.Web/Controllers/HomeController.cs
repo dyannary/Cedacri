@@ -16,29 +16,30 @@ namespace Calculator.Web.Controllers
         }
 
 
-        public ActionResult Index()
+        public ActionResult Index(CalculatorModel calculatorModel)
         {
-            CalculatorModel calculatorModel = new CalculatorModel();
-
-            calculatorModel.Expression = "calculator";
-
             return View(calculatorModel);
         }
 
         [HttpPost]
-        public ActionResult CalculateExpression([FromBody] string expression)
+        public ActionResult CalculateExpression(string expression)
         {
             try
             {
-                var result = _dijkstraTwoStack.Calculate(expression);
 
-                return Json(new { StatusCode = 200, result });
+                expression = (_dijkstraTwoStack.Calculate(expression)).ToString();
+
+                CalculatorModel calculatorModel = new CalculatorModel();
+
+                calculatorModel.Expression = expression;
+
+                return View("Index", calculatorModel);
             }
             catch (Exception ex)
             {
                 return BadRequest($"Error calculating expression: {ex.Message}");
             }
         }
-        
+
     }
 }

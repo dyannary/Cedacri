@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\NotesApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9D465B47-D5AC-4A99-9187-21A50315C901}|NotesApp.Domain\\NotesApp.Domain.csproj|c:\\users\\crme146\\personal\\moodle\\entityframework\\notesapp\\notesapp.domain\\entities\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D465B47-D5AC-4A99-9187-21A50315C901}|NotesApp.Domain\\NotesApp.Domain.csproj|solutionrelative:notesapp.domain\\entities\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D465B47-D5AC-4A99-9187-21A50315C901}|NotesApp.Domain\\NotesApp.Domain.csproj|c:\\users\\crme146\\personal\\moodle\\entityframework\\notesapp\\notesapp.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D465B47-D5AC-4A99-9187-21A50315C901}|NotesApp.Domain\\NotesApp.Domain.csproj|solutionrelative:notesapp.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D465B47-D5AC-4A99-9187-21A50315C901}|NotesApp.Domain\\NotesApp.Domain.csproj|c:\\users\\crme146\\personal\\moodle\\entityframework\\notesapp\\notesapp.domain\\entities\\attachments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D465B47-D5AC-4A99-9187-21A50315C901}|NotesApp.Domain\\NotesApp.Domain.csproj|solutionrelative:notesapp.domain\\entities\\attachments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D465B47-D5AC-4A99-9187-21A50315C901}|NotesApp.Domain\\NotesApp.Domain.csproj|c:\\users\\crme146\\personal\\moodle\\entityframework\\notesapp\\notesapp.domain\\entities\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D465B47-D5AC-4A99-9187-21A50315C901}|NotesApp.Domain\\NotesApp.Domain.csproj|solutionrelative:notesapp.domain\\entities\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D465B47-D5AC-4A99-9187-21A50315C901}|NotesApp.Domain\\NotesApp.Domain.csproj|c:\\users\\crme146\\personal\\moodle\\entityframework\\notesapp\\notesapp.domain\\entities\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D465B47-D5AC-4A99-9187-21A50315C901}|NotesApp.Domain\\NotesApp.Domain.csproj|solutionrelative:notesapp.domain\\entities\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D465B47-D5AC-4A99-9187-21A50315C901}|NotesApp.Domain\\NotesApp.Domain.csproj|c:\\users\\crme146\\personal\\moodle\\entityframework\\notesapp\\notesapp.domain\\entities\\notetag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D465B47-D5AC-4A99-9187-21A50315C901}|NotesApp.Domain\\NotesApp.Domain.csproj|solutionrelative:notesapp.domain\\entities\\notetag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D465B47-D5AC-4A99-9187-21A50315C901}|NotesApp.Domain\\NotesApp.Domain.csproj|c:\\users\\crme146\\personal\\moodle\\entityframework\\notesapp\\notesapp.domain\\enums\\filetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D465B47-D5AC-4A99-9187-21A50315C901}|NotesApp.Domain\\NotesApp.Domain.csproj|solutionrelative:notesapp.domain\\enums\\filetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D465B47-D5AC-4A99-9187-21A50315C901}|NotesApp.Domain\\NotesApp.Domain.csproj|c:\\users\\crme146\\personal\\moodle\\entityframework\\notesapp\\notesapp.domain\\enums\\priority.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D465B47-D5AC-4A99-9187-21A50315C901}|NotesApp.Domain\\NotesApp.Domain.csproj|solutionrelative:notesapp.domain\\enums\\priority.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D465B47-D5AC-4A99-9187-21A50315C901}|NotesApp.Domain\\NotesApp.Domain.csproj|c:\\users\\crme146\\personal\\moodle\\entityframework\\notesapp\\notesapp.domain\\enums\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D465B47-D5AC-4A99-9187-21A50315C901}|NotesApp.Domain\\NotesApp.Domain.csproj|solutionrelative:notesapp.domain\\enums\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BABBE8B-7B41-44A5-AA4C-0985EFBABA16}|NotesApp\\NotesApp.csproj|c:\\users\\crme146\\personal\\moodle\\entityframework\\notesapp\\notesapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BABBE8B-7B41-44A5-AA4C-0985EFBABA16}|NotesApp\\NotesApp.csproj|solutionrelative:notesapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Task.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\NotesApp\\NotesApp.Domain\\Entities\\Task.cs",
+              "RelativeDocumentMoniker": "NotesApp.Domain\\Entities\\Task.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\NotesApp\\NotesApp.Domain\\Entities\\Task.cs",
+              "RelativeToolTip": "NotesApp.Domain\\Entities\\Task.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T12:54:50.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\NotesApp\\NotesApp.Domain\\Entities\\Event.cs",
+              "RelativeDocumentMoniker": "NotesApp.Domain\\Entities\\Event.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\NotesApp\\NotesApp.Domain\\Entities\\Event.cs",
+              "RelativeToolTip": "NotesApp.Domain\\Entities\\Event.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T12:53:20.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FileType.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\NotesApp\\NotesApp.Domain\\Enums\\FileType.cs",
+              "RelativeDocumentMoniker": "NotesApp.Domain\\Enums\\FileType.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\NotesApp\\NotesApp.Domain\\Enums\\FileType.cs",
+              "RelativeToolTip": "NotesApp.Domain\\Enums\\FileType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T12:50:29.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Attachments.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\NotesApp\\NotesApp.Domain\\Entities\\Attachments.cs",
+              "RelativeDocumentMoniker": "NotesApp.Domain\\Entities\\Attachments.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\NotesApp\\NotesApp.Domain\\Entities\\Attachments.cs",
+              "RelativeToolTip": "NotesApp.Domain\\Entities\\Attachments.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T12:46:46.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NoteTag.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\NotesApp\\NotesApp.Domain\\Entities\\NoteTag.cs",
+              "RelativeDocumentMoniker": "NotesApp.Domain\\Entities\\NoteTag.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\NotesApp\\NotesApp.Domain\\Entities\\NoteTag.cs",
+              "RelativeToolTip": "NotesApp.Domain\\Entities\\NoteTag.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T12:45:32.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Priority.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\NotesApp\\NotesApp.Domain\\Enums\\Priority.cs",
+              "RelativeDocumentMoniker": "NotesApp.Domain\\Enums\\Priority.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\NotesApp\\NotesApp.Domain\\Enums\\Priority.cs",
+              "RelativeToolTip": "NotesApp.Domain\\Enums\\Priority.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T12:42:55.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Note.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\NotesApp\\NotesApp.Domain\\Entities\\Note.cs",
+              "RelativeDocumentMoniker": "NotesApp.Domain\\Entities\\Note.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\NotesApp\\NotesApp.Domain\\Entities\\Note.cs",
+              "RelativeToolTip": "NotesApp.Domain\\Entities\\Note.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T12:40:25.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\NotesApp\\NotesApp.Domain\\Enums\\Role.cs",
+              "RelativeDocumentMoniker": "NotesApp.Domain\\Enums\\Role.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\NotesApp\\NotesApp.Domain\\Enums\\Role.cs",
+              "RelativeToolTip": "NotesApp.Domain\\Enums\\Role.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T12:39:37.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\NotesApp\\NotesApp.Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "NotesApp.Domain\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\NotesApp\\NotesApp.Domain\\Entities\\User.cs",
+              "RelativeToolTip": "NotesApp.Domain\\Entities\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T12:34:56.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\NotesApp\\NotesApp\\Program.cs",
+              "RelativeDocumentMoniker": "NotesApp\\Program.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\NotesApp\\NotesApp\\Program.cs",
+              "RelativeToolTip": "NotesApp\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T12:33:52.465Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
