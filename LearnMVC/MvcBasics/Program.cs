@@ -1,7 +1,12 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using MvcBasics.Data;
+using MvcBasics.Helpers;
 using MvcBasics.Interfaces;
+using MvcBasics.Models;
 using MvcBasics.Repository;
+using MvcBasics.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,18 +14,26 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IClubRepository, ClubRepository>();
 builder.Services.AddScoped<IRaceRepository, RaceRepository>();
+builder.Services.AddScoped<IPhotoService, PhotoService>();
+builder.Services.Configure<CloudinarySettings>(builder.Configuration.GetSection("CloudinarySettings"));
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+builder.Services.AddIdentity<User, IdentityRole<int>>()
+    .AddEntityFrameworkStores<AppDbContext>();
+builder.Services.AddMemoryCache();
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+       .AddCookie();
 
 var app = builder.Build();
 
-if(args.Length == 1 && args[0].ToLower() == "seeddata")
-{
-    Seed.SeedData(app);
-}
+//if(args.Length == 1 && args[0].ToLower() == "seeddata")
+//{
+//    await Seed.SeedUsersAndRolesAsync(app);
+//    //Seed.SeedData(app);
+//}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

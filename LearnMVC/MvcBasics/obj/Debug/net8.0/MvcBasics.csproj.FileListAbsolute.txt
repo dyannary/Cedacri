@@ -273,3 +273,9 @@ C:\Users\crme146\Personal\Moodle\LearnMVC\MvcBasics\obj\Debug\net8.0\MvcBasics.g
 C:\Users\crme146\Personal\Moodle\LearnMVC\MvcBasics\obj\Debug\net8.0\ref\MvcBasics.dll
 C:\Users\crme146\Personal\Moodle\LearnMVC\MvcBasics\bin\Debug\net8.0\CloudinaryDotNet.dll
 C:\Users\crme146\Personal\Moodle\LearnMVC\MvcBasics\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\crme146\Personal\Moodle\LearnMVC\MvcBasics\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\crme146\Personal\Moodle\LearnMVC\MvcBasics\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\crme146\Personal\Moodle\LearnMVC\MvcBasics\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\crme146\Personal\Moodle\LearnMVC\MvcBasics\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\crme146\Personal\Moodle\LearnMVC\MvcBasics\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\crme146\Personal\Moodle\LearnMVC\MvcBasics\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
