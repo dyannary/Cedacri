@@ -11,4 +11,6 @@ public class Task
     public DateTime CreationDate { get; set; }   
     public DateTime Deadline { get; set; }
     public bool IsCompleted { get; set; }
+    public int UserId { get; set; }
+    public User User { get; set; }
 }

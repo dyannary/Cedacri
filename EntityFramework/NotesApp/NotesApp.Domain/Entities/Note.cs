@@ -8,8 +8,10 @@ public class Note
     public string? Content { get; set; } = string.Empty;
     public DateTime CreationDate {  get; set; } = DateTime.Now;
     public DateTime LastModified { get; set;} = DateTime.Now;
-    public ICollection<NoteTag>? NoteTags { get; set; } = new List<NoteTag>();
     public Priority Priority { get; set; }
     public DateTime? Remainder { get; set; } = DateTime.Now;
-    public ICollection<Attachments>? Attachments { get; set; }
+    public ICollection<NoteTag>? NoteTags { get; set; } 
+    public ICollection<Attachment>? Attachments { get; set; }
+    public int UserId { get; set; }
+    public User User { get; set; }
 }

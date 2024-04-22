@@ -1,0 +1,5 @@
+C:\Users\crme146\Personal\Moodle\EntityFramework\NotesApp\NotesApp\obj\Debug\net8.0\NotesApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\crme146\Personal\Moodle\EntityFramework\NotesApp\NotesApp\obj\Debug\net8.0\NotesApp.AssemblyInfoInputs.cache
+C:\Users\crme146\Personal\Moodle\EntityFramework\NotesApp\NotesApp\obj\Debug\net8.0\NotesApp.AssemblyInfo.cs
+C:\Users\crme146\Personal\Moodle\EntityFramework\NotesApp\NotesApp\obj\Debug\net8.0\NotesApp.csproj.CoreCompileInputs.cache
+C:\Users\crme146\Personal\Moodle\EntityFramework\NotesApp\NotesApp\obj\Debug\net8.0\NotesApp.sourcelink.json

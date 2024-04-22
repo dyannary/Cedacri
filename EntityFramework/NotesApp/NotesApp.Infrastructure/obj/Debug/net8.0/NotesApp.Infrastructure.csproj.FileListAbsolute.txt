@@ -1,0 +1,16 @@
+C:\Users\crme146\Personal\Moodle\EntityFramework\NotesApp\NotesApp.Infrastructure\bin\Debug\net8.0\NotesApp.Infrastructure.deps.json
+C:\Users\crme146\Personal\Moodle\EntityFramework\NotesApp\NotesApp.Infrastructure\bin\Debug\net8.0\NotesApp.Infrastructure.dll
+C:\Users\crme146\Personal\Moodle\EntityFramework\NotesApp\NotesApp.Infrastructure\bin\Debug\net8.0\NotesApp.Infrastructure.pdb
+C:\Users\crme146\Personal\Moodle\EntityFramework\NotesApp\NotesApp.Infrastructure\bin\Debug\net8.0\NotesApp.Domain.dll
+C:\Users\crme146\Personal\Moodle\EntityFramework\NotesApp\NotesApp.Infrastructure\bin\Debug\net8.0\NotesApp.Domain.pdb
+C:\Users\crme146\Personal\Moodle\EntityFramework\NotesApp\NotesApp.Infrastructure\obj\Debug\net8.0\NotesApp.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\crme146\Personal\Moodle\EntityFramework\NotesApp\NotesApp.Infrastructure\obj\Debug\net8.0\NotesApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\crme146\Personal\Moodle\EntityFramework\NotesApp\NotesApp.Infrastructure\obj\Debug\net8.0\NotesApp.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\crme146\Personal\Moodle\EntityFramework\NotesApp\NotesApp.Infrastructure\obj\Debug\net8.0\NotesApp.Infrastructure.AssemblyInfo.cs
+C:\Users\crme146\Personal\Moodle\EntityFramework\NotesApp\NotesApp.Infrastructure\obj\Debug\net8.0\NotesApp.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\crme146\Personal\Moodle\EntityFramework\NotesApp\NotesApp.Infrastructure\obj\Debug\net8.0\NotesApp.Infrastructure.sourcelink.json
+C:\Users\crme146\Personal\Moodle\EntityFramework\NotesApp\NotesApp.Infrastructure\obj\Debug\net8.0\NotesApp.DFB65C1B.Up2Date
+C:\Users\crme146\Personal\Moodle\EntityFramework\NotesApp\NotesApp.Infrastructure\obj\Debug\net8.0\NotesApp.Infrastructure.dll
+C:\Users\crme146\Personal\Moodle\EntityFramework\NotesApp\NotesApp.Infrastructure\obj\Debug\net8.0\refint\NotesApp.Infrastructure.dll
+C:\Users\crme146\Personal\Moodle\EntityFramework\NotesApp\NotesApp.Infrastructure\obj\Debug\net8.0\NotesApp.Infrastructure.pdb
+C:\Users\crme146\Personal\Moodle\EntityFramework\NotesApp\NotesApp.Infrastructure\obj\Debug\net8.0\ref\NotesApp.Infrastructure.dll

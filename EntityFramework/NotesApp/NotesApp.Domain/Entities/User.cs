@@ -16,5 +16,10 @@ namespace NotesApp.Domain.Entities
 
         public DateTime UpdateDateTime { get; set; } = DateTime.Now;
         public virtual ICollection<Note>? Notes { get; set; }
+        public virtual ICollection<Event>? Events { get; set; }
+        public virtual ICollection<Entities.Task>? Tasks { get; set; }
+
+
+
     }
 }
