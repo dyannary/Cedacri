@@ -6,15 +6,12 @@ namespace Calculator.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
         private readonly DijkstraTwoStack _dijkstraTwoStack;
 
-        public HomeController(ILogger<HomeController> logger, DijkstraTwoStack dijkstraTwoStack)
+        public HomeController(DijkstraTwoStack dijkstraTwoStack)
         {
-            _logger = logger;
             _dijkstraTwoStack = dijkstraTwoStack;
         }
-
 
         public ActionResult Index(CalculatorModel calculatorModel)
         {
@@ -22,12 +19,41 @@ namespace Calculator.Web.Controllers
         }
 
         [HttpPost]
-        public ActionResult CalculateExpression(string expression)
+        public ActionResult CalculateExpression(string expression, string value)
         {
             try
             {
-
-                expression = (_dijkstraTwoStack.Calculate(expression)).ToString();
+                if(value == "clear")
+                {
+                    expression = "";
+                }
+                else if(value == "clearLast")
+                {
+                    if(!string.IsNullOrEmpty(expression))
+                        expression = expression.Remove(expression.Length - 1, 1);
+                }
+                else if(value == "calculate")
+                {
+                    expression = (_dijkstraTwoStack.Calculate(expression)).ToString();
+                }
+                else
+                {
+                    if (IsArithmeticOperator(value))
+                    {
+                        if (!string.IsNullOrEmpty(expression) && (expression.Length == 0 || !IsArithmeticOperator(expression[expression.Length - 1].ToString())))
+                        {
+                            expression += value;
+                        }
+                        else if (!string.IsNullOrEmpty(expression))
+                        {
+                            expression = expression.Remove(expression.Length - 1) + value;
+                        }
+                    }
+                    else
+                    {
+                        expression += value;
+                    }
+                }
 
                 CalculatorModel calculatorModel = new CalculatorModel();
 
@@ -37,9 +63,15 @@ namespace Calculator.Web.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest($"Error calculating expression: {ex.Message}");
+                CalculatorModel errorModel = new CalculatorModel();
+                errorModel.errorMessage = ex.Message;
+                return View("Index", errorModel);
             }
         }
 
+        private bool IsArithmeticOperator(string value)
+        {
+            return value == "+" || value == "-" || value == "×" || value == "÷";
+        }
     }
 }

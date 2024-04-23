@@ -1,172 +1,92 @@
-﻿@* @model CalculatorModel
+﻿@model Calculator.Web.Models.CalculatorModel
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="\css\site.css">
-    <title>Calculator</title>
-</head>
- 
-<body>
-    <form method="post" asp-action="CalculateExpression">
+@if (!string.IsNullOrEmpty(Model.errorMessage))
+{
+    <div class="alert alert-danger" role="alert">
+        @Model.errorMessage
+    </div>
+}
+
+ <form method="post" asp-action="CalculateExpression">
+    <div class="form-group">
         <div class="wrapper">
-            <input class="screen" name="expressionScreen" value="@Model.Expression"/>
+            <input class="screen" name="expression" value="@Model.Expression" placeholder="0"/>
             <section class="calc-buttons">
                 <div class="calc-button-row">
-                    <button class="calc-button double" type="button" onclick="clearScreen()">
-                        C
-                    </button>
-                    <button class="calc-button" type="button" onclick="deleteLastChar()">
-                        &larr;
-                    </button>
-                </div>
-
-                <div class="calc-button-row">
-                    <button class="calc-button" type="button" onclick="appendToExpression('(')">
+                    <button class="calc-button" type="submit" name="value" value="(">
                         (
                     </button>
-                    <button class="calc-button" type="button" onclick="appendToExpression(')')">
+                    <button class="calc-button" type="submit" name="value" value=")">
                         )
                     </button>
-                    <button class="calc-button" type="button" onclick="">
-                        ^
+                    <button class="calc-button-pink" type="submit" name="value" value="clearLast">
+                        &larr;
                     </button>
-                    <button class="calc-button" type="button" onclick="appendToExpression('÷')">
+                    <button class="calc-button" type="submit" name="value" value="÷">
                         &divide;
                     </button>
                 </div>
 
                 <div class="calc-button-row">
-                    <button class="calc-button" type="button" onclick="appendToExpression('7')">
+                    <button class="calc-button" type="submit" name="value" value="7">
                         7
                     </button>
-                    <button class="calc-button" type="button" onclick="appendToExpression('8')">
+                    <button class="calc-button" type="submit" name="value" value="8">
                         8
                     </button>
-                    <button class="calc-button" type="button" onclick="appendToExpression('9')">
+                    <button class="calc-button" type="submit" name="value" value="9">
                         9
                     </button>
-                    <button class="calc-button" type="button" onclick="appendToExpression('×'); appendToExpression('*')">
+                    <button class="calc-button" type="submit" name="value" value="×">
                         &times;
                     </button>
                 </div>
 
                 <div class="calc-button-row">
-                    <button class="calc-button" type="button" onclick="appendToExpression('4')">
+                    <button class="calc-button" type="submit" name="value" value="4">
                         4
                     </button>
-                    <button class="calc-button" type="button" onclick="appendToExpression('5')">
+                    <button class="calc-button" type="submit" name="value" value="5">
                         5
                     </button>
-                    <button class="calc-button" type="button" onclick="appendToExpression('6')">
+                    <button class="calc-button" type="submit" name="value" value="6">
                         6
                     </button>
-                    <button class="calc-button" type="button" onclick="appendToExpression('-')">
+                    <button class="calc-button" type="submit" name="value" value="-">
                         &minus;
                     </button>
                 </div>
 
                 <div class="calc-button-row">
-                    <button class="calc-button" type="button" onclick="appendToExpression('1')">
+                    <button class="calc-button" type="submit" name="value" value="1">
                         1
                     </button>
-                    <button class="calc-button" type="button" onclick="appendToExpression('2')">
+                    <button class="calc-button" type="submit" name="value" value="2">
                         2
                     </button>
-                    <button class="calc-button" type="button" onclick="appendToExpression('3')">
+                    <button class="calc-button" type="submit" name="value" value="3">
                         3
                     </button>
-                    <button class="calc-button" type="button" onclick="appendToExpression('+')">
+                    <button class="calc-button" type="submit" name="value" value="+">
                         &plus;
                     </button>
                 </div>
 
                 <div class="calc-button-row">
-                    <button class="calc-button" onclick="appendToExpression('+-')">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-slash-minus" viewBox="0 0 16 16">
-                            <path d="m1.854 14.854 13-13a.5.5 0 0 0-.708-.708l-13 13a.5.5 0 0 0 .708.708M4 1a.5.5 0 0 1 .5.5v2h2a.5.5 0 0 1 0 1h-2v2a.5.5 0 0 1-1 0v-2h-2a.5.5 0 0 1 0-1h2v-2A.5.5 0 0 1 4 1m5 11a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5A.5.5 0 0 1 9 12" />
-                        </svg>
+                    <button class="calc-button-pink" type="submit" name="value" value="clear">
+                        C
                     </button>
-                    <button class="calc-button" type="button" onclick="appendToExpression('0')">
+                    <button class="calc-button" type="submit" name="value" value="0">
                         0
                     </button>
-                    <button class="calc-button" type="button" onclick="appendToExpression('.')">
+                    <button class="calc-button" type="submit" name="value" value=".">
                         .
                     </button>
-                    <button class="calc-button" type="button" onclick="calculate()">
+                    <button class="calc-button" type="submit" name="value" value="calculate">
                         &equals;
                     </button>
                 </div>
-
             </section>
         </div>
-    </form>
- 
-    <script>
-        function clearScreen() {
-            document.getElementsByName('expressionScreen')[0].value = '';
-        }
-
-        function deleteLastChar() {
-            var expression = document.getElementsByName('expressionScreen')[0].value;
-            document.getElementsByName('expressionScreen')[0].value = expression.slice(0, -1);
-        }
-
-        function appendToExpression(char) {
-            var expression = document.getElementsByName('expressionScreen')[0].value;
-            var lastChar = expression[expression.length - 1];
-
-            var noRepeatChars = ['(', ')', '+', '-', '*', '÷', '.'];
-            if (noRepeatChars.includes(lastChar) && lastChar === char) {
-                return;
-            }
-            if (expression === '0') {
-                document.getElementsByName('expressionScreen')[0].value = char;
-            } else {
-                document.getElementsByName('expressionScreen')[0].value += char;
-            }
-        }
-
-        function calculate() {
-            var expression = document.getElementsByName('expressionScreen')[0].value;
-
-            // Make a POST request to the controller endpoint
-            fetch('Home/CalculateExpression', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(expression)
-            })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    // Update the HTML with the result
-                    document.getElementsByName('expressionScreen')[0].value = data.result;
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                });
-        }
-    </script>
-</body>
-</html>
- *@
-
-@model Calculator.Web.Models.CalculatorModel
-
- <form method="post" asp-action="CalculateExpression">
-    <div class="form-group">
-        <label>Your expression</label>
-        <input asp-for="Expression" style="margin-top:20px;" type="text" name="expression" class="form-control" value="@Model.Expression" placeholder="Enter expression">
     </div>
-    <div style="margin-top:20px;"></div>
-    <button type="submit" class="btn btn-primary">Submit</button>
 </form>

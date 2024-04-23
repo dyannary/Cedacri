@@ -4,9 +4,16 @@ namespace Calculator.Algorithm
 {
     public class DijkstraTwoStack
     {
+        
         public decimal Calculate(string expression)
         {
             expression = expression.Replace(" ", "");
+            expression = expression.Replace("÷", "/");
+            expression = expression.Replace("×", "*");
+
+            ValidationService.ValidateExpression(expression);
+
+            expression = "0+" + expression;
 
             char[] tokens = expression.ToCharArray();
 
