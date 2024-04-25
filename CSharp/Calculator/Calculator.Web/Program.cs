@@ -1,11 +1,12 @@
 using Calculator.Algorithm;
+using Calculator.Web.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<DijkstraTwoStack>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddScoped<CalculatorService, CalculatorService>();
 
 var app = builder.Build();
 

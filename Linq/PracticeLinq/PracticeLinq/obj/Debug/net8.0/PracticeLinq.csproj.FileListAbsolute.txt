@@ -7,6 +7,7 @@ C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\PracticeLinq\obj\Debug\net8.0
 C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\PracticeLinq\obj\Debug\net8.0\PracticeLinq.AssemblyInfoInputs.cache
 C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\PracticeLinq\obj\Debug\net8.0\PracticeLinq.AssemblyInfo.cs
 C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\PracticeLinq\obj\Debug\net8.0\PracticeLinq.csproj.CoreCompileInputs.cache
+C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\PracticeLinq\obj\Debug\net8.0\PracticeLinq.sourcelink.json
 C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\PracticeLinq\obj\Debug\net8.0\PracticeLinq.dll
 C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\PracticeLinq\obj\Debug\net8.0\refint\PracticeLinq.dll
 C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\PracticeLinq\obj\Debug\net8.0\PracticeLinq.pdb

@@ -8,5 +8,12 @@
             Console.WriteLine(text);
             Console.ResetColor();
         }
+
+        public void WriteBlue(string text)
+        {
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine(text);
+            Console.ResetColor();
+        }
     }
 }

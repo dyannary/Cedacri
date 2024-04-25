@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using System.Text.RegularExpressions;
 
 namespace Calculator.Algorithm
 {
@@ -10,6 +11,12 @@ namespace Calculator.Algorithm
             expression = expression.Replace(" ", "");
             expression = expression.Replace("÷", "/");
             expression = expression.Replace("×", "*");
+
+
+            //if (Regex.IsMatch(expression, @".*(?:\+\)|-\)|\*\)|\/\)|\+|-|\*|\/)$"))
+            //{
+            //    return 0;
+            //}
 
             ValidationService.ValidateExpression(expression);
 
@@ -64,7 +71,7 @@ namespace Calculator.Algorithm
                 {
                     if (tokens[i - 1] == '+' || 
                         tokens[i - 1] == '-' || 
-                        tokens[i - 1] == '(' || 
+                        tokens[i - 1] == '(' ||
                         tokens[i - 1] == '*' ||
                         tokens[i - 1] == '/')
                     {

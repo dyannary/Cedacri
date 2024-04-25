@@ -38,11 +38,14 @@ namespace Calculator
                 throw new ArgumentException("Expression should not end with an operand.");
             }
 
-            if (DivideZero(expression))
+            //if (DivideZero(expression))
+            //{
+            //    throw new ArgumentException("Division by zero does not exist.");
+            //}
+            if (EndsOperator(expression))
             {
-                throw new ArgumentException("Division by zero does not exist.");
+                throw new ArgumentException("Cannot end with an operand.");
             }
-
             Console.ResetColor();
         }
 
@@ -78,6 +81,11 @@ namespace Calculator
         public static bool BracketsAfterDigit(string expression)
         {
             return Regex.IsMatch(expression, @"\d\(");
+        }
+
+        public static bool EndsOperator(string expression)
+        {
+            return Regex.IsMatch(expression, @".*(?:\+\)|-\)|\*\)|\/\)|\+|-|\*|\/)$");
         }
     }
 }

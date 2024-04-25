@@ -1,20 +1,25 @@
 using Microsoft.AspNetCore.Mvc;
-using Calculator.Algorithm;
 using Calculator.Web.Models;
+using Calculator.Web.Services;
+using System.Text.RegularExpressions;
 
 namespace Calculator.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly DijkstraTwoStack _dijkstraTwoStack;
+        private readonly CalculatorService _calculatorService;
 
-        public HomeController(DijkstraTwoStack dijkstraTwoStack)
+        public HomeController(CalculatorService calculatorService)
         {
-            _dijkstraTwoStack = dijkstraTwoStack;
+            _calculatorService = calculatorService;
         }
 
         public ActionResult Index(CalculatorModel calculatorModel)
         {
+            //
+            //ViewBag.Calc = calculatorModel.Expression;
+            //ViewData["calc"] = calculatorModel.Expression;
+
             return View(calculatorModel);
         }
 
@@ -23,38 +28,15 @@ namespace Calculator.Web.Controllers
         {
             try
             {
-                if(value == "clear")
+                expression = value switch
                 {
-                    expression = "";
-                }
-                else if(value == "clearLast")
-                {
-                    if(!string.IsNullOrEmpty(expression))
-                        expression = expression.Remove(expression.Length - 1, 1);
-                }
-                else if(value == "calculate")
-                {
-                    expression = (_dijkstraTwoStack.Calculate(expression)).ToString();
-                }
-                else
-                {
-                    if (IsArithmeticOperator(value))
-                    {
-                        if (!string.IsNullOrEmpty(expression) && (expression.Length == 0 || !IsArithmeticOperator(expression[expression.Length - 1].ToString())))
-                        {
-                            expression += value;
-                        }
-                        else if (!string.IsNullOrEmpty(expression))
-                        {
-                            expression = expression.Remove(expression.Length - 1) + value;
-                        }
-                    }
-                    else
-                    {
-                        expression += value;
-                    }
-                }
-
+                    "clear" => expression = _calculatorService.CleanExpression(),
+                    "clearLast" => expression = _calculatorService.ClearLastCharacter(expression),
+                    "calculate" => expression = _calculatorService.CalculateResult(expression),
+                    "." => expression = _calculatorService.AddDecimal(expression, value),
+                    _ => expression = _calculatorService.UpdateExpression(expression, value)
+                };
+             
                 CalculatorModel calculatorModel = new CalculatorModel();
 
                 calculatorModel.Expression = expression;
@@ -64,14 +46,17 @@ namespace Calculator.Web.Controllers
             catch (Exception ex)
             {
                 CalculatorModel errorModel = new CalculatorModel();
-                errorModel.errorMessage = ex.Message;
+                if(Regex.IsMatch(expression, @"÷0"))
+                {
+                    errorModel.Expression = "Infinity";
+                }
+                else
+                {
+                    errorModel.errorMessage = ex.Message;
+                    errorModel.Expression = expression;
+                }
                 return View("Index", errorModel);
             }
-        }
-
-        private bool IsArithmeticOperator(string value)
-        {
-            return value == "+" || value == "-" || value == "×" || value == "÷";
         }
     }
 }
