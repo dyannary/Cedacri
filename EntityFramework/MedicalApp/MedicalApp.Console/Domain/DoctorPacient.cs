@@ -8,6 +8,6 @@ public class DoctorPacient
     public int DoctorId { get; set; }
     [Key]
     public int PatientId { get; set; }
-    public Patient Patient { get; set; } = null!;
-    public Doctor Doctor { get; set; } = null!;
+    public Patient Patient { get; set; }
+    public Doctor Doctor { get; set; }
 }

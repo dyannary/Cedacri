@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A8C77C5A-12EA-45B1-A70E-C65E63301750}|MvcBasics\\MvcBasics.csproj|c:\\users\\crme146\\personal\\moodle\\learnmvc\\mvcbasics\\controllers\\clubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8C77C5A-12EA-45B1-A70E-C65E63301750}|MvcBasics\\MvcBasics.csproj|solutionrelative:mvcbasics\\controllers\\clubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A8C77C5A-12EA-45B1-A70E-C65E63301750}|MvcBasics\\MvcBasics.csproj|c:\\users\\crme146\\personal\\moodle\\learnmvc\\mvcbasics\\repository\\clubrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8C77C5A-12EA-45B1-A70E-C65E63301750}|MvcBasics\\MvcBasics.csproj|solutionrelative:mvcbasics\\repository\\clubrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8C77C5A-12EA-45B1-A70E-C65E63301750}|MvcBasics\\MvcBasics.csproj|c:\\users\\crme146\\personal\\moodle\\learnmvc\\mvcbasics\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8C77C5A-12EA-45B1-A70E-C65E63301750}|MvcBasics\\MvcBasics.csproj|solutionrelative:mvcbasics\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8C77C5A-12EA-45B1-A70E-C65E63301750}|MvcBasics\\MvcBasics.csproj|c:\\users\\crme146\\personal\\moodle\\learnmvc\\mvcbasics\\interfaces\\iclubrepository.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8C77C5A-12EA-45B1-A70E-C65E63301750}|MvcBasics\\MvcBasics.csproj|solutionrelative:mvcbasics\\interfaces\\iclubrepository.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8C77C5A-12EA-45B1-A70E-C65E63301750}|MvcBasics\\MvcBasics.csproj|c:\\users\\crme146\\personal\\moodle\\learnmvc\\mvcbasics\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8C77C5A-12EA-45B1-A70E-C65E63301750}|MvcBasics\\MvcBasics.csproj|solutionrelative:mvcbasics\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8C77C5A-12EA-45B1-A70E-C65E63301750}|MvcBasics\\MvcBasics.csproj|c:\\users\\crme146\\personal\\moodle\\learnmvc\\mvcbasics\\data\\clubseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A8C77C5A-12EA-45B1-A70E-C65E63301750}|MvcBasics\\MvcBasics.csproj|c:\\users\\crme146\\personal\\moodle\\learnmvc\\mvcbasics\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8C77C5A-12EA-45B1-A70E-C65E63301750}|MvcBasics\\MvcBasics.csproj|solutionrelative:mvcbasics\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8C77C5A-12EA-45B1-A70E-C65E63301750}|MvcBasics\\MvcBasics.csproj|c:\\users\\crme146\\personal\\moodle\\learnmvc\\mvcbasics\\controllers\\clubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8C77C5A-12EA-45B1-A70E-C65E63301750}|MvcBasics\\MvcBasics.csproj|solutionrelative:mvcbasics\\controllers\\clubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8C77C5A-12EA-45B1-A70E-C65E63301750}|MvcBasics\\MvcBasics.csproj|c:\\users\\crme146\\personal\\moodle\\learnmvc\\mvcbasics\\data\\addressseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,10 +55,6 @@
       "RelativeMoniker": "D:0:0:{A8C77C5A-12EA-45B1-A70E-C65E63301750}|MvcBasics\\MvcBasics.csproj|solutionrelative:mvcbasics\\models\\club.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8C77C5A-12EA-45B1-A70E-C65E63301750}|MvcBasics\\MvcBasics.csproj|c:\\users\\crme146\\personal\\moodle\\learnmvc\\mvcbasics\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8C77C5A-12EA-45B1-A70E-C65E63301750}|MvcBasics\\MvcBasics.csproj|solutionrelative:mvcbasics\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Migrations\\20240422113610_Identity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MvcBasics\\Migrations\\20240422113610_Identity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -61,10 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A8C77C5A-12EA-45B1-A70E-C65E63301750}|MvcBasics\\MvcBasics.csproj|c:\\users\\crme146\\personal\\moodle\\learnmvc\\mvcbasics\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8C77C5A-12EA-45B1-A70E-C65E63301750}|MvcBasics\\MvcBasics.csproj|solutionrelative:mvcbasics\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8C77C5A-12EA-45B1-A70E-C65E63301750}|MvcBasics\\MvcBasics.csproj|c:\\users\\crme146\\personal\\moodle\\learnmvc\\mvcbasics\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8C77C5A-12EA-45B1-A70E-C65E63301750}|MvcBasics\\MvcBasics.csproj|solutionrelative:mvcbasics\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,50 +78,112 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "IClubRepository.cs.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Interfaces\\IClubRepository.cs.cs",
+              "RelativeDocumentMoniker": "MvcBasics\\Interfaces\\IClubRepository.cs.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Interfaces\\IClubRepository.cs.cs",
+              "RelativeToolTip": "MvcBasics\\Interfaces\\IClubRepository.cs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T08:44:58.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ClubRepository.cs",
               "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Repository\\ClubRepository.cs",
               "RelativeDocumentMoniker": "MvcBasics\\Repository\\ClubRepository.cs",
               "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Repository\\ClubRepository.cs",
               "RelativeToolTip": "MvcBasics\\Repository\\ClubRepository.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAA9wAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T13:28:48.036Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "MvcBasics\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "MvcBasics\\Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T09:21:08.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddressSeed.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Data\\AddressSeed.cs",
+              "RelativeDocumentMoniker": "MvcBasics\\Data\\AddressSeed.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Data\\AddressSeed.cs",
+              "RelativeToolTip": "MvcBasics\\Data\\AddressSeed.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T11:14:03.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Address.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Models\\Address.cs",
+              "RelativeDocumentMoniker": "MvcBasics\\Models\\Address.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Models\\Address.cs",
+              "RelativeToolTip": "MvcBasics\\Models\\Address.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T10:59:50.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Program.cs",
+              "RelativeDocumentMoniker": "MvcBasics\\Program.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Program.cs",
+              "RelativeToolTip": "MvcBasics\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T09:20:58.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ClubController.cs",
               "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Controllers\\ClubController.cs",
               "RelativeDocumentMoniker": "MvcBasics\\Controllers\\ClubController.cs",
               "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Controllers\\ClubController.cs",
               "RelativeToolTip": "MvcBasics\\Controllers\\ClubController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBQAAAAwAAAA",
+              "ViewState": "AQIAADEAAAAAAAAAAAAUwE8AAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T13:23:02.388Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "20240422114019_Identity.cs",
-              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Migrations\\20240422114019_Identity.cs",
-              "RelativeDocumentMoniker": "MvcBasics\\Migrations\\20240422114019_Identity.cs",
-              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Migrations\\20240422114019_Identity.cs",
-              "RelativeToolTip": "MvcBasics\\Migrations\\20240422114019_Identity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAaAAAA",
+              "DocumentIndex": 5,
+              "Title": "ClubSeed.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Data\\ClubSeed.cs",
+              "RelativeDocumentMoniker": "MvcBasics\\Data\\ClubSeed.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Data\\ClubSeed.cs",
+              "RelativeToolTip": "MvcBasics\\Data\\ClubSeed.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T11:40:19.983Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T09:27:17.296Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Models\\User.cs",
               "RelativeDocumentMoniker": "MvcBasics\\Models\\User.cs",
@@ -129,46 +195,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClubSeed.cs",
-              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Data\\ClubSeed.cs",
-              "RelativeDocumentMoniker": "MvcBasics\\Data\\ClubSeed.cs",
-              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Data\\ClubSeed.cs",
-              "RelativeToolTip": "MvcBasics\\Data\\ClubSeed.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAZAAAA",
+              "DocumentIndex": 9,
+              "Title": "20240422114019_Identity.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Migrations\\20240422114019_Identity.cs",
+              "RelativeDocumentMoniker": "MvcBasics\\Migrations\\20240422114019_Identity.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Migrations\\20240422114019_Identity.cs",
+              "RelativeToolTip": "MvcBasics\\Migrations\\20240422114019_Identity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T09:27:17.296Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T11:40:19.983Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "MvcBasics\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "MvcBasics\\Data\\AppDbContext.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T09:21:08.499Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AddressSeed.cs",
-              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Data\\AddressSeed.cs",
-              "RelativeDocumentMoniker": "MvcBasics\\Data\\AddressSeed.cs",
-              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Data\\AddressSeed.cs",
-              "RelativeToolTip": "MvcBasics\\Data\\AddressSeed.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T11:14:03.432Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "20240422113610_Identity.cs",
               "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Migrations\\20240422113610_Identity.cs",
               "RelativeDocumentMoniker": "MvcBasics\\Migrations\\20240422113610_Identity.cs",
@@ -180,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "20240422113938_Identity3.cs",
               "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Migrations\\20240422113938_Identity3.cs",
               "RelativeDocumentMoniker": "MvcBasics\\Migrations\\20240422113938_Identity3.cs",
@@ -192,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "MvcBasics\\Models\\ErrorViewModel.cs",
@@ -204,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Club.cs",
               "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Models\\Club.cs",
               "RelativeDocumentMoniker": "MvcBasics\\Models\\Club.cs",
@@ -216,19 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Address.cs",
-              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Models\\Address.cs",
-              "RelativeDocumentMoniker": "MvcBasics\\Models\\Address.cs",
-              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Models\\Address.cs",
-              "RelativeToolTip": "MvcBasics\\Models\\Address.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T10:59:50.542Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Race.cs",
               "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Models\\Race.cs",
               "RelativeDocumentMoniker": "MvcBasics\\Models\\Race.cs",
@@ -240,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "RaceSeed.cs",
               "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Data\\RaceSeed.cs",
               "RelativeDocumentMoniker": "MvcBasics\\Data\\RaceSeed.cs",
@@ -248,12 +275,11 @@
               "RelativeToolTip": "MvcBasics\\Data\\RaceSeed.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAQwBkAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T09:33:25.216Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T09:33:25.216Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "UserSeed.cs",
               "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Data\\UserSeed.cs",
               "RelativeDocumentMoniker": "MvcBasics\\Data\\UserSeed.cs",
@@ -262,18 +288,6 @@
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-22T09:21:28.949Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Program.cs",
-              "RelativeDocumentMoniker": "MvcBasics\\Program.cs",
-              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\LearnMVC\\MvcBasics\\Program.cs",
-              "RelativeToolTip": "MvcBasics\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T09:20:58.306Z"
             }
           ]
         }

@@ -9,8 +9,10 @@ public class AppDbContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlServer(connectionString);
+        //optionsBuilder.LogTo(System.Console.WriteLine);
+        optionsBuilder.LogTo(message => System.Diagnostics.Debug.WriteLine(message));
     }
-
+    private readonly StreamWriter logStream = new StreamWriter("mylog.txt", true);
     public DbSet<Doctor> Doctors { get; set; }
     public DbSet<Patient> Patients { get; set; }
     public DbSet<DoctorPacient> DoctorPatients { get; set; }

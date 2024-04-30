@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\MedicalApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A7CBC2-6B95-4F10-A04F-717837F1E379}|MedicalApp.Console\\MedicalApp.Console.csproj|c:\\users\\crme146\\personal\\moodle\\entityframework\\medicalapp\\medicalapp.console\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A7CBC2-6B95-4F10-A04F-717837F1E379}|MedicalApp.Console\\MedicalApp.Console.csproj|solutionrelative:medicalapp.console\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A7CBC2-6B95-4F10-A04F-717837F1E379}|MedicalApp.Console\\MedicalApp.Console.csproj|c:\\users\\crme146\\personal\\moodle\\entityframework\\medicalapp\\medicalapp.console\\repository\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A7CBC2-6B95-4F10-A04F-717837F1E379}|MedicalApp.Console\\MedicalApp.Console.csproj|solutionrelative:medicalapp.console\\repository\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A7CBC2-6B95-4F10-A04F-717837F1E379}|MedicalApp.Console\\MedicalApp.Console.csproj|c:\\users\\crme146\\personal\\moodle\\entityframework\\medicalapp\\medicalapp.console\\domain\\doctorpacient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A7CBC2-6B95-4F10-A04F-717837F1E379}|MedicalApp.Console\\MedicalApp.Console.csproj|solutionrelative:medicalapp.console\\domain\\doctorpacient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A7CBC2-6B95-4F10-A04F-717837F1E379}|MedicalApp.Console\\MedicalApp.Console.csproj|c:\\users\\crme146\\personal\\moodle\\entityframework\\medicalapp\\medicalapp.console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A7CBC2-6B95-4F10-A04F-717837F1E379}|MedicalApp.Console\\MedicalApp.Console.csproj|solutionrelative:medicalapp.console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A7CBC2-6B95-4F10-A04F-717837F1E379}|MedicalApp.Console\\MedicalApp.Console.csproj|c:\\users\\crme146\\personal\\moodle\\entityframework\\medicalapp\\medicalapp.console\\domain\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A7CBC2-6B95-4F10-A04F-717837F1E379}|MedicalApp.Console\\MedicalApp.Console.csproj|solutionrelative:medicalapp.console\\domain\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\MedicalApp\\MedicalApp.Console\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "MedicalApp.Console\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\MedicalApp\\MedicalApp.Console\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "MedicalApp.Console\\Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T13:21:46.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DoctorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\MedicalApp\\MedicalApp.Console\\Repository\\DoctorRepository.cs",
+              "RelativeDocumentMoniker": "MedicalApp.Console\\Repository\\DoctorRepository.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\MedicalApp\\MedicalApp.Console\\Repository\\DoctorRepository.cs",
+              "RelativeToolTip": "MedicalApp.Console\\Repository\\DoctorRepository.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAD4vw4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T08:44:27.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\MedicalApp\\MedicalApp.Console\\Domain\\Patient.cs",
+              "RelativeDocumentMoniker": "MedicalApp.Console\\Domain\\Patient.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\MedicalApp\\MedicalApp.Console\\Domain\\Patient.cs",
+              "RelativeToolTip": "MedicalApp.Console\\Domain\\Patient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T06:07:26.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DoctorPacient.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\MedicalApp\\MedicalApp.Console\\Domain\\DoctorPacient.cs",
+              "RelativeDocumentMoniker": "MedicalApp.Console\\Domain\\DoctorPacient.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\MedicalApp\\MedicalApp.Console\\Domain\\DoctorPacient.cs",
+              "RelativeToolTip": "MedicalApp.Console\\Domain\\DoctorPacient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T06:07:18.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\MedicalApp\\MedicalApp.Console\\Program.cs",
+              "RelativeDocumentMoniker": "MedicalApp.Console\\Program.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\EntityFramework\\MedicalApp\\MedicalApp.Console\\Program.cs",
+              "RelativeToolTip": "MedicalApp.Console\\Program.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAADQAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T05:58:43.719Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

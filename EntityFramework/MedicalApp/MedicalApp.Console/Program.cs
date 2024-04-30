@@ -1,16 +1,53 @@
 ﻿using MedicalApp.Console.Data;
+using MedicalApp.Console.Domain;
 using MedicalApp.Console.Repository;
-using Microsoft.EntityFrameworkCore;
 
 var dbContext = new AppDbContext();
 
-Console.WriteLine("Doctors: ");
+var doctorRepository = new DoctorRepository(dbContext);
 
-DoctorRepository doctorRepository = new DoctorRepository(dbContext);
+Console.WriteLine("Doctors: ");
 
 var doctors = doctorRepository.GetAll();
 
-foreach (var doctor in doctors)
+Console.WriteLine("Add a doctor: ");
+
+var doctor = new Doctor
 {
-    Console.WriteLine($"Doctor ID: {doctor.Id}, Name: {doctor.Name}, Username: {doctor.Username}, Email: {doctor.Email}");
+    Name = "Diana",
+    Username = "root",
+    Email = "root@mail.com",
+};
+
+var doctor2 = new Doctor
+{
+    Name = "Diana",
+    Username = "root",
+    Email = "root@mail.com",
+};
+
+doctorRepository.Add(doctor);
+doctorRepository.Add(doctor2);
+
+
+foreach (var d in doctors)
+{
+    Console.WriteLine($"Doctor ID: {d.Id}, Name: {d.Name}, Username: {d.Username}, Email: {d.Email}");
 }
+
+doctorRepository.Edit(doctor);
+
+foreach (var d in doctors)
+{
+    Console.WriteLine($"Doctor ID: {d.Id}, Name: {d.Name}, Username: {d.Username}, Email: {d.Email}");
+}
+
+
+doctorRepository.Delete(doctor2);
+
+foreach (var d in doctors)
+{
+    Console.WriteLine($"Doctor ID: {d.Id}, Name: {d.Name}, Username: {d.Username}, Email: {d.Email}");
+}
+
+Console.Read();

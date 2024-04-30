@@ -18,6 +18,19 @@ public class DoctorRepository
         return Save();
     }
 
+    public bool Edit(Doctor doctor)
+    {
+        var result = _context.Doctors.FirstOrDefault();
+        if(result != null)
+        {
+            result.Name = "Bob";
+            result.Username = "bob";
+            result.Email = "bob@mail.com";
+            Save();
+        }
+        return false;
+    }
+
     public bool Delete(Doctor doctor)
     {
         _context.Remove(doctor);
@@ -32,6 +45,6 @@ public class DoctorRepository
     public bool Save()
     {
         var saved = _context.SaveChanges();
-        return saved > 0;
+        return saved > 0 ? true : false;
     }
 }
