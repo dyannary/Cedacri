@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\crme146\\Personal\\Moodle\\Linq\\PracticeLinq\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{419A6FBB-889E-475E-86F6-B7124AB13A1D}|PracticeLinq\\PracticeLinq.csproj|c:\\users\\crme146\\personal\\moodle\\linq\\practicelinq\\practicelinq\\num.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{419A6FBB-889E-475E-86F6-B7124AB13A1D}|PracticeLinq\\PracticeLinq.csproj|solutionrelative:practicelinq\\num.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D63FEAB2-AEFA-4797-A6C5-7BAA18C03C1A}|Linq\\Linq.csproj|c:\\users\\crme146\\personal\\moodle\\linq\\practicelinq\\linq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D63FEAB2-AEFA-4797-A6C5-7BAA18C03C1A}|Linq\\Linq.csproj|solutionrelative:linq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{419A6FBB-889E-475E-86F6-B7124AB13A1D}|PracticeLinq\\PracticeLinq.csproj|c:\\users\\crme146\\personal\\moodle\\linq\\practicelinq\\practicelinq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{419A6FBB-889E-475E-86F6-B7124AB13A1D}|PracticeLinq\\PracticeLinq.csproj|solutionrelative:practicelinq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D63FEAB2-AEFA-4797-A6C5-7BAA18C03C1A}|Linq\\Linq.csproj|c:\\users\\crme146\\personal\\moodle\\linq\\practicelinq\\linq\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D63FEAB2-AEFA-4797-A6C5-7BAA18C03C1A}|Linq\\Linq.csproj|solutionrelative:linq\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D63FEAB2-AEFA-4797-A6C5-7BAA18C03C1A}|Linq\\Linq.csproj|c:\\users\\crme146\\personal\\moodle\\linq\\practicelinq\\linq\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D63FEAB2-AEFA-4797-A6C5-7BAA18C03C1A}|Linq\\Linq.csproj|solutionrelative:linq\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D63FEAB2-AEFA-4797-A6C5-7BAA18C03C1A}|Linq\\Linq.csproj|c:\\users\\crme146\\personal\\moodle\\linq\\practicelinq\\linq\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D63FEAB2-AEFA-4797-A6C5-7BAA18C03C1A}|Linq\\Linq.csproj|solutionrelative:linq\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{419A6FBB-889E-475E-86F6-B7124AB13A1D}|PracticeLinq\\PracticeLinq.csproj|c:\\users\\crme146\\personal\\moodle\\linq\\practicelinq\\practicelinq\\color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -18,11 +38,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Num.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\Linq\\PracticeLinq\\PracticeLinq\\Num.cs",
+              "RelativeDocumentMoniker": "PracticeLinq\\Num.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\Linq\\PracticeLinq\\PracticeLinq\\Num.cs",
+              "RelativeToolTip": "PracticeLinq\\Num.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T09:13:34.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\Linq\\PracticeLinq\\Linq\\Department.cs",
+              "RelativeDocumentMoniker": "Linq\\Department.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\Linq\\PracticeLinq\\Linq\\Department.cs",
+              "RelativeToolTip": "Linq\\Department.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T06:42:46.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Teacher.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\Linq\\PracticeLinq\\Linq\\Teacher.cs",
+              "RelativeDocumentMoniker": "Linq\\Teacher.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\Linq\\PracticeLinq\\Linq\\Teacher.cs",
+              "RelativeToolTip": "Linq\\Teacher.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T06:42:39.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\Linq\\PracticeLinq\\Linq\\Student.cs",
+              "RelativeDocumentMoniker": "Linq\\Student.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\Linq\\PracticeLinq\\Linq\\Student.cs",
+              "RelativeToolTip": "Linq\\Student.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T06:42:21.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\Linq\\PracticeLinq\\Linq\\Program.cs",
+              "RelativeDocumentMoniker": "Linq\\Program.cs",
+              "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\Linq\\PracticeLinq\\Linq\\Program.cs",
+              "RelativeToolTip": "Linq\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T06:27:44.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Color.cs",
               "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\Linq\\PracticeLinq\\PracticeLinq\\Color.cs",
               "RelativeDocumentMoniker": "PracticeLinq\\Color.cs",
@@ -35,13 +120,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\crme146\\Personal\\Moodle\\Linq\\PracticeLinq\\PracticeLinq\\Program.cs",
               "RelativeDocumentMoniker": "PracticeLinq\\Program.cs",
               "ToolTip": "C:\\Users\\crme146\\Personal\\Moodle\\Linq\\PracticeLinq\\PracticeLinq\\Program.cs",
               "RelativeToolTip": "PracticeLinq\\Program.cs",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAAAGAAAAAJAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAD0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-24T07:38:20.964Z",
               "EditorCaption": ""

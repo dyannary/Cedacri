@@ -37,9 +37,9 @@ public class DoctorRepository
         return Save();
     }
 
-    public ICollection<Doctor> GetAll()
+    public async Task<ICollection<Doctor>> GetAll()
     {
-        return _context.Doctors.ToList();
+        return await _context.Doctors.ToListAsync();
     }
 
     public bool Save()

@@ -30,24 +30,24 @@ doctorRepository.Add(doctor);
 doctorRepository.Add(doctor2);
 
 
-foreach (var d in doctors)
-{
-    Console.WriteLine($"Doctor ID: {d.Id}, Name: {d.Name}, Username: {d.Username}, Email: {d.Email}");
-}
+//foreach (var d in doctors)
+//{
+//    Console.WriteLine($"Doctor ID: {d.Id}, Name: {d.Name}, Username: {d.Username}, Email: {d.Email}");
+//}
 
-doctorRepository.Edit(doctor);
+//doctorRepository.Edit(doctor);
 
-foreach (var d in doctors)
-{
-    Console.WriteLine($"Doctor ID: {d.Id}, Name: {d.Name}, Username: {d.Username}, Email: {d.Email}");
-}
+//foreach (var d in doctors)
+//{
+//    Console.WriteLine($"Doctor ID: {d.Id}, Name: {d.Name}, Username: {d.Username}, Email: {d.Email}");
+//}
 
 
-doctorRepository.Delete(doctor2);
+//doctorRepository.Delete(doctor2);
 
-foreach (var d in doctors)
-{
-    Console.WriteLine($"Doctor ID: {d.Id}, Name: {d.Name}, Username: {d.Username}, Email: {d.Email}");
-}
+//foreach (var d in doctors)
+//{
+//    Console.WriteLine($"Doctor ID: {d.Id}, Name: {d.Name}, Username: {d.Username}, Email: {d.Email}");
+//}
 
 Console.Read();

@@ -1,10 +1,113 @@
-﻿using PracticeLinq;
-using System.Runtime.CompilerServices;
-using System.Security.Cryptography;
+﻿//int[] elements = {1, 2, 3, 12, 5, 76, 2, 3, 3};
 
-Color color = new Color();
+//var query = (from e in elements
+//            where e < 10
+//            where e > 0
+//            orderby e  
+//            select e).Distinct();
 
-var myArray = new int[] { 1, 5, -1, 3 , 4};
+//var queryMethod = elements.Where(x => x > 0 && x < 10).OrderBy(x=>x).Distinct();
+
+//foreach (var element in query)
+//{
+//    Console.WriteLine(element);
+//}
+
+//Console.WriteLine("Method: ");
+//foreach (var element in queryMethod)
+//{
+//    Console.WriteLine(element);
+//}
+
+//var squareNum = from int Number in elements
+//                let SqrNo = Number*Number
+//                select new { Number, SqrNo };                                                                                                                                                                                                                                                                                                                                                     
+
+//var squareNumMethod = elements.Select(Number => new {Number, SqrNo = Number * Number });
+
+//foreach (var element in squareNum)
+//{
+//    Console.WriteLine(element);
+//}
+
+//Console.WriteLine("Method: ");
+//foreach (var element in squareNumMethod)
+//{
+//    Console.WriteLine(element);
+//}
+
+//var frequencyNum = elements.Where(x => x > 0 && x < 10).GroupBy(x => x).Select(Number => new { Number.Key, appeares = Number.Count()});
+
+//Console.WriteLine("Frequency");
+//foreach (var element in frequencyNum)
+//{
+//    Console.WriteLine(element);
+//}
+
+
+
+
+
+
+using PracticeLinq;
+
+int[] array = { 10, -2, 7, 54, -3, 2 };
+
+
+var result = from a in array
+             where a < 0
+             let Sqr = a * a
+             let l = "  -  "
+             select new {a, l, Sqr};
+
+array[2] = 10;
+
+foreach (var item in result)
+{
+    Console.WriteLine(item.a + item.l + item.Sqr);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Color color = new Color();
+
+//var myArray = new int[] { 1, 5, -1, 3 , 4};
 
 //color.WriteRed("Sum elements except duplicates.");
 
@@ -95,15 +198,46 @@ var myArray = new int[] { 1, 5, -1, 3 , 4};
 //}
 
 //myArray
-var result = (from element 
-             in myArray
-             where element % 2 != 0
-             select element).Sum();
+//var result = (from element 
+//             in myArray
+//             where element % 2 != 0
+//             select element).Sum();
 
-Console.WriteLine("sum is: " + result);
+//Console.WriteLine("sum is: " + result);
+
+//string[] people = { "Tom", "Bob", "Sam", "Tim", "Tomas", "Bill" };
+
+//var selectedPeople = from p in people
+//                     where p.ToUpper().StartsWith("T")
+//                     orderby p
+//                     select p;
+
+//var selectedPeopleMethod = people.Where(p => p.ToUpper().StartsWith("T")).OrderBy(p => p);
+
+//foreach(var person in selectedPeopleMethod)
+//{
+//    Console.Write(person + " ");
+//}
+
+//int[] numbers = { 1, 39, 10, 3 };
+
+//var evenNumbers = (from n in numbers
+//                  where n % 2 != 0
+//                  select n).Count();
+
+//var evenNumbersMethod = numbers.Where(n => n % 2 != 0).Sum();
+
+//var numberContains = numbers.Where(x => x.ToString().Contains("1")).Count();
+
+//Console.WriteLine(evenNumbersMethod);
+//Console.WriteLine("Numbers contain 1: " + numberContains);
 
 //var resultMethod 
 //foreach (var item in result)
 //{
 //    Console.Write(item + " ");
 //}
+
+
+
+
