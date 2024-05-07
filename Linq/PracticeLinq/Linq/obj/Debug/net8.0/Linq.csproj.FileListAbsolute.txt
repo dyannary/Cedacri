@@ -13,3 +13,10 @@ C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\Linq\obj\Debug\net8.0\refint\
 C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\Linq\obj\Debug\net8.0\Linq.pdb
 C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\Linq\obj\Debug\net8.0\Linq.genruntimeconfig.cache
 C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\Linq\obj\Debug\net8.0\ref\Linq.dll
+C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\Linq\bin\Debug\net8.0\PracticeLinq.deps.json
+C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\Linq\bin\Debug\net8.0\PracticeLinq.runtimeconfig.json
+C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\Linq\bin\Debug\net8.0\PracticeLinq.exe
+C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\Linq\bin\Debug\net8.0\PracticeLinq.dll
+C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\Linq\bin\Debug\net8.0\PracticeLinq.pdb
+C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\Linq\obj\Debug\net8.0\Linq.csproj.AssemblyReference.cache
+C:\Users\crme146\Personal\Moodle\Linq\PracticeLinq\Linq\obj\Debug\net8.0\Linq.csproj.Up2Date

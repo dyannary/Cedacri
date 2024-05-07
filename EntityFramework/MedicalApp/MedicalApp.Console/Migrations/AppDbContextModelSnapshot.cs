@@ -22,74 +22,69 @@ namespace MedicalApp.Console.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("DoctorPatient", b =>
-                {
-                    b.Property<int>("DoctorsId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("PatientsId")
-                        .HasColumnType("int");
-
-                    b.HasKey("DoctorsId", "PatientsId");
-
-                    b.HasIndex("PatientsId");
-
-                    b.ToTable("DoctorPatient");
-                });
-
             modelBuilder.Entity("MedicalApp.Console.Domain.Doctor", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("Ident")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("doctor_id");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Ident"));
+
+                    b.Property<int?>("DoctorId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(50)");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("doctor_name");
+
+                    b.Property<int?>("PatientId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Username")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(20)
+                        .HasColumnType("VARCHAR");
 
-                    b.HasKey("Id");
+                    b.HasKey("Ident")
+                        .HasName("DoctorsPrimaryKey");
 
                     b.ToTable("Doctors");
 
                     b.HasData(
                         new
                         {
-                            Id = 1,
+                            Ident = 1,
                             Email = "user1@mail.com",
                             Name = "User1",
                             Username = "Test1"
                         });
                 });
 
-            modelBuilder.Entity("MedicalApp.Console.Domain.DoctorPacient", b =>
+            modelBuilder.Entity("MedicalApp.Console.Domain.DoctorPatient", b =>
                 {
-                    b.Property<int>("DoctorId")
-                        .HasColumnType("int");
-
                     b.Property<int>("PatientId")
                         .HasColumnType("int");
 
-                    b.HasKey("DoctorId", "PatientId");
+                    b.Property<int>("DoctorId")
+                        .HasColumnType("int");
 
-                    b.HasIndex("PatientId");
+                    b.HasKey("PatientId", "DoctorId");
+
+                    b.HasIndex("DoctorId");
 
                     b.ToTable("DoctorPatients");
 
                     b.HasData(
                         new
                         {
-                            DoctorId = 1,
-                            PatientId = 1
+                            PatientId = 1,
+                            DoctorId = 1
                         });
                 });
 
@@ -105,10 +100,10 @@ namespace MedicalApp.Console.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PacientId")
+                    b.Property<int>("PatientId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("RecordDate")
+                    b.Property<DateTime>("RecordDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Treatment")
@@ -117,6 +112,8 @@ namespace MedicalApp.Console.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("PatientId");
+
                     b.ToTable("MedicalRecords");
                 });
 
@@ -124,7 +121,8 @@ namespace MedicalApp.Console.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("patient_id");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
@@ -134,7 +132,8 @@ namespace MedicalApp.Console.Migrations
 
                     b.Property<string>("Idnp")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(12)
+                        .HasColumnType("nvarchar(12)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -146,7 +145,7 @@ namespace MedicalApp.Console.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Patients");
+                    b.ToTable("Pacient", (string)null);
 
                     b.HasData(
                         new
@@ -175,7 +174,7 @@ namespace MedicalApp.Console.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PacientId")
+                    b.Property<int>("PatientId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("PrescriptionDate")
@@ -183,34 +182,21 @@ namespace MedicalApp.Console.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("PatientId");
+
                     b.ToTable("Recipes");
                 });
 
-            modelBuilder.Entity("DoctorPatient", b =>
-                {
-                    b.HasOne("MedicalApp.Console.Domain.Doctor", null)
-                        .WithMany()
-                        .HasForeignKey("DoctorsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("MedicalApp.Console.Domain.Patient", null)
-                        .WithMany()
-                        .HasForeignKey("PatientsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("MedicalApp.Console.Domain.DoctorPacient", b =>
+            modelBuilder.Entity("MedicalApp.Console.Domain.DoctorPatient", b =>
                 {
                     b.HasOne("MedicalApp.Console.Domain.Doctor", "Doctor")
-                        .WithMany("DoctorPacients")
+                        .WithMany()
                         .HasForeignKey("DoctorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("MedicalApp.Console.Domain.Patient", "Patient")
-                        .WithMany("DoctorPacients")
+                        .WithMany()
                         .HasForeignKey("PatientId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -220,14 +206,29 @@ namespace MedicalApp.Console.Migrations
                     b.Navigation("Patient");
                 });
 
-            modelBuilder.Entity("MedicalApp.Console.Domain.Doctor", b =>
+            modelBuilder.Entity("MedicalApp.Console.Domain.MedicalRecord", b =>
                 {
-                    b.Navigation("DoctorPacients");
+                    b.HasOne("MedicalApp.Console.Domain.Patient", null)
+                        .WithMany("MedicalRecords")
+                        .HasForeignKey("PatientId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("MedicalApp.Console.Domain.Recipe", b =>
+                {
+                    b.HasOne("MedicalApp.Console.Domain.Patient", null)
+                        .WithMany("Recipes")
+                        .HasForeignKey("PatientId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("MedicalApp.Console.Domain.Patient", b =>
                 {
-                    b.Navigation("DoctorPacients");
+                    b.Navigation("MedicalRecords");
+
+                    b.Navigation("Recipes");
                 });
 #pragma warning restore 612, 618
         }

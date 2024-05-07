@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "PracticeLinq/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/PracticeLinq.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PracticeLinq.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "PracticeLinq/1.0.0": {
+      "type": "project",
+      "path": "../PracticeLinq/PracticeLinq.csproj",
+      "msbuildProject": "../PracticeLinq/PracticeLinq.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "PracticeLinq >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\crme146\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\crme146\\Personal\\Moodle\\Linq\\PracticeLinq\\PracticeLinq\\PracticeLinq.csproj": {
+              "projectPath": "C:\\Users\\crme146\\Personal\\Moodle\\Linq\\PracticeLinq\\PracticeLinq\\PracticeLinq.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

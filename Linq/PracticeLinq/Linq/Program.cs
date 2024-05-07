@@ -1,4 +1,7 @@
 ﻿using Linq;
+using PracticeLinq;
+
+Color color = new Color();
 
 List<Teacher> teachers = new List<Teacher>
 {
@@ -29,9 +32,38 @@ var queryMethod = students.Join(departments,
     student => student.DepartmentId, department => department.Id,
     (student, department) => new { Name = $"{student.FirstName} {student.LastName}", DepartmentName = department.Name });
 
-//group, order by, aggregation
 
-foreach (var q in queryMethod)
+//group by and order by
+Console.WriteLine("Group by department\n");
+var departmentsQuery = (from student in students
+                        join department in departments on student.DepartmentId equals department.Id
+                        group student by department.Name into departmentGroup
+                        select new
+                        {
+                            Department = departmentGroup.Key,
+                            //order by
+                            Students = departmentGroup.OrderByDescending(s=>s.FirstName).ThenBy(s=>s.LastName),
+                        }
+                        ).Distinct();
+
+foreach(var department in departmentsQuery)
 {
-    Console.WriteLine($"{q.Name} - {q.DepartmentName}");
+    color.WriteRed(department.Department);
+
+    foreach (var p in department.Students)
+    {
+        Console.WriteLine(p.FirstName + " " + p.LastName);
+    }
 }
+
+//Aggregation /Aggregate
+
+var aggregateQuery = students.Aggregate("", (current, next) => current + " \n" + next.FirstName + " " + next.LastName);
+
+Console.WriteLine("\nAggregation query: ");
+Console.WriteLine(aggregateQuery);
+
+//foreach (var q in queryMethod)
+//{
+//    Console.WriteLine($"{q.Name} - {q.DepartmentName}");
+//}

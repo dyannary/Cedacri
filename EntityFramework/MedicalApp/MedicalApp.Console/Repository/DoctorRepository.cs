@@ -11,6 +11,20 @@ public class DoctorRepository
     {
         _context = context;
     }
+    public ICollection<Doctor> GetAll()
+    {
+        return _context.Doctors.ToList();
+    }
+
+    public Doctor? GetDoctorById(int id)
+    {
+        var doctor = _context.Doctors.FirstOrDefault(x => x.Ident == id);
+
+        if (doctor is null)
+            return null;
+
+        return doctor;
+    }
 
     public bool Add(Doctor doctor)
     {
@@ -18,28 +32,24 @@ public class DoctorRepository
         return Save();
     }
 
-    public bool Edit(Doctor doctor)
+    public bool Edit(int id)
     {
-        var result = _context.Doctors.FirstOrDefault();
-        if(result != null)
+        var updated = _context.Doctors.FirstOrDefault(x => x.Ident == id);
+        if (updated != null)
         {
-            result.Name = "Bob";
-            result.Username = "bob";
-            result.Email = "bob@mail.com";
+            updated.Name = "Bob";
+            updated.Username = "bob";
+            updated.Email = "bob@mail.com";
             Save();
         }
         return false;
     }
 
-    public bool Delete(Doctor doctor)
+    public bool Delete(int id)
     {
-        _context.Remove(doctor);
+        _context.Doctors.Where(d => d.Ident == id).ExecuteDelete();
+        
         return Save();
-    }
-
-    public async Task<ICollection<Doctor>> GetAll()
-    {
-        return await _context.Doctors.ToListAsync();
     }
 
     public bool Save()

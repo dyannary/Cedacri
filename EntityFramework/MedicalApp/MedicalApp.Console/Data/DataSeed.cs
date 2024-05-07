@@ -1,7 +1,7 @@
 ﻿using MedicalApp.Console.Domain;
 using Microsoft.EntityFrameworkCore;
 
-namespace MedicalApp.Console.Data;
+namespace Models.Context;
 
 public class DataSeed
 {
@@ -17,7 +17,7 @@ public class DataSeed
         modelBuilder.Entity<Doctor>().HasData(
             new Doctor()
             {
-                Id = 1,
+                Ident = 1,
                 Name = "User1",
                 Username = "Test1",
                 Email = "user1@mail.com",
@@ -41,8 +41,8 @@ public class DataSeed
 
     private static void SeedDoctorPatients(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<DoctorPacient>().HasData(
-            new DoctorPacient()
+        modelBuilder.Entity<DoctorPatient>().HasData(
+            new DoctorPatient()
             {
                 DoctorId = 1,
                 PatientId = 1
