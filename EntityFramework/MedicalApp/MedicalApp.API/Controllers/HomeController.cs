@@ -1,24 +1,21 @@
 ﻿using MedicalApp.API.Data;
 using MedicalApp.Console.Domain;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Hosting;
 using Models.Dtos;
 
 namespace MedicalApp.API.Controllers;
 
-[Route("api/posts")]
+[Route("api/[controller]")]
 [ApiController]
-public class HomeController : ControllerBase
+public class DoctorController : ControllerBase
 {
     private readonly AppDbContext _context;
-    public HomeController(AppDbContext context)
+    public DoctorController(AppDbContext context)
     {
         _context = context;
     }
 
     [HttpGet]
-   // [ProducesResponseType(typeof(IEnumerable<string>), 200)]
     public ActionResult<IEnumerable<Doctor>> GetAll()
     {
         var result = _context.Doctors.ToList();
@@ -40,7 +37,8 @@ public class HomeController : ControllerBase
     }
 
     [HttpPost]
-    [ProducesResponseType(typeof(IEnumerable<string>), 200)]
+    [ProducesResponseType(StatusCodes.Status201Created)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public ActionResult AddPost(AddEditDoctorDto doctorDto)
     {
         var doctor = new Doctor
